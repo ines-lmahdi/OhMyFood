@@ -20,15 +20,12 @@ html{
 }
 
 .banner h2{
-    font-weight: 100;
     font-size: 20px;
     padding-bottom: 20px;
 }
 
-#fonction h2{
-    font-weight: 20px;
-}
-
-a{
-    text-decoration: none;
+.fonction h2, .restaurants h2{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
 }
