@@ -1,0 +1,64 @@
+/************************************ Bouton degradé **************************************/
+.btn-degrad{
+    background: linear-gradient(150deg,$color-primary, $color-secondary);
+    width: 250px;
+    padding: 10px;
+    border-radius: 30px;
+    border:none;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    &:hover{
+        background: linear-gradient(10deg, lighten($color-primary, 20%), lighten($color-secondary, 10%));
+        transition: transform .2s;
+        transform: scale(1.1);
+
+        }
+ }
+/************************************ Etape fonctionnement **************************************/
+
+.step{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 85%;
+    align-items: center;
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid rgba(246,246,246,255);
+    background-color: $background-grey;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px grey;
+    padding: 20px 15px 20px 15px;
+    transition-property: transform;
+    transition-duration: 1000ms;
+    &:hover{
+        transform: scale(1.1);
+        background-color:rgba(245,237,254,255);
+        border-color:rgba(245,237,254,255);
+    }
+    .number{
+        background-color: #512c7e;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        padding: 11px 14px 11px 14px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    i
+    {
+        padding: 15px 15px 15px 15px;
+        color:#512c7e;
+        margin: 10px;
+    }
+
+    p{
+        font-weight: bold;
+    }
+}
+/************************************  **************************************/
+/************************************  **************************************/
+/************************************  **************************************/
+/************************************  **************************************/
