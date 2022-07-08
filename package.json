@@ -4,7 +4,8 @@
   "description": "Projet 3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+    "sass": "sass ./sass/main.scss:./public/css/style.css -w --style compressed",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -15,6 +16,7 @@
   ],
   "author": "ines-lmahdi",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/ines-lmahdi/OhmyFood/issues"
   },

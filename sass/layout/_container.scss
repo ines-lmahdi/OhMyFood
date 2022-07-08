@@ -23,7 +23,7 @@
 
 }
 
-/************************************ ACCUEIL Cartes restaurants **************************************/
+/************************************ ACCUEIL Fonctionnement **************************************/
 
 .fonctionnement{
     margin-bottom: 20px;
@@ -109,10 +109,6 @@
 
     }
 
-
-
-
-
 /************* MENU Image des restaurants ************/
 
 #banner{
@@ -121,7 +117,6 @@
         width: 100%;
         height: 300px;
         object-fit: cover;
-
     }
 }
 
@@ -136,12 +131,10 @@
     padding: 20px 0px 20px 0px;
     background-color: $background-grey;
     width: 100%;
-    border-radius: 30px 30px 0px 0px;
-    //position: absolute;
-    //top: -60px;
-    .empty-heart{
-        background-color: grey;
-    }
+    border-radius: 50px 50px 0px 0px;
+    position: absolute;
+    top: -80px;
+
 }
 
 /************************************ MENU  **************************************/
