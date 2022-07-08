@@ -149,6 +149,12 @@
 #carte{
     background-color: rgba(246,246,246,255);
     position: relative;
+    #commander{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+
+    }
         #formulaire{
             display: flex;
             flex-direction: column;
@@ -161,7 +167,7 @@
                         background-color: #FFFFFF;
                         border:none;
                         height: 60px;
-                        width: 96%;
+                        width: 90%;
                         margin-bottom: 10px;
                         text-align: left;
                         border-radius: 10px;

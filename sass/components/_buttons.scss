@@ -8,11 +8,14 @@
     text-decoration: none;
     color: white;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     &:hover{
         background: linear-gradient(10deg, lighten($color-primary, 20%), lighten($color-secondary, 10%));
         transition: transform .2s;
         transform: scale(1.1);
-
         }
  }
 /************************************ Etape Fonctionnement **************************************/
