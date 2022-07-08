@@ -1,0 +1,75 @@
+
+
+ /************************** ANIMATION LOADER *******************************/
+.loader{
+    background-color:rgba(246,246,246,0.8);
+    inset: 0;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: disappear 3s forwards;
+
+    .fa-bell-concierge{
+        font-size: 150px;
+        animation: chargeur 3s;
+        color: $color-primary;
+    }
+}
+@keyframes disappear {
+    99%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+        visibility: hidden;
+    }
+}
+@keyframes chargeur{
+    0%{
+        color: $color-primary;
+
+    }
+
+    50%{
+        color:$color-secondary;
+    }
+
+    75%{
+        color: $color-tertiary;
+        opacity: 1;
+
+    }
+    100%{
+        transform: rotate(360deg) scale(1.5);
+        opacity: 0;
+        // background-color: opacity 1;
+    }
+ }
+
+ /************************** ANIMATION  APPARITION DU MENU *******************************/
+
+ .menu-section{
+
+    .delay-1{
+        animation: appearance .5s;
+    }
+    .delay-2{
+        animation: appearance 1s;
+    }
+    .delay-3{
+        animation: appearance 1.5s;
+    }
+    .delay-4{
+        animation: appearance 2s;
+    }
+ }
+ @keyframes appearance {
+    from {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1);
+    }
+ }

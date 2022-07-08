@@ -139,6 +139,46 @@
     border-radius: 30px 30px 0px 0px;
     //position: absolute;
     //top: -60px;
+    .empty-heart{
+        background-color: grey;
+    }
 }
 
-/************************************ ACCUEIL Cartes restaurants **************************************/
+/************************************ MENU  **************************************/
+
+#carte{
+    background-color: rgba(246,246,246,255);
+    position: relative;
+        #formulaire{
+            display: flex;
+            flex-direction: column;
+                .menu-section{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .btn-menu{
+                        background-color: #FFFFFF;
+                        border:none;
+                        height: 60px;
+                        width: 96%;
+                        margin-bottom: 10px;
+                        text-align: left;
+                        border-radius: 10px;
+                        align-items: center;
+
+                        h3{
+                            font-weight: bold;
+                            padding-bottom: 5px;
+                        }
+
+                        .menu-price{
+                            display: flex;
+                            justify-content:flex-end;
+                            font-weight: bold;
+                            padding: 10px;
+                        }
+                    }
+                }
+        }
+}

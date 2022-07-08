@@ -1,7 +1,7 @@
 /************************************ Bouton degradé **************************************/
 .btn-degrad{
     background: linear-gradient(150deg,$color-primary, $color-secondary);
-    width: 250px;
+    width: 200px;
     padding: 10px;
     border-radius: 30px;
     border:none;
@@ -63,7 +63,7 @@
 .block-heart{
     cursor: pointer;
     position: relative;
-    background-color: white;
+    //background-color: white;
 
     .full-like{
         background: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356dc));
@@ -71,7 +71,6 @@
         -webkit-text-fill-color: transparent;
     }
     .empty-like{
-        background-color: white;
         color: black;
         position: absolute;
 
@@ -83,6 +82,17 @@
             transition-duration: .5s;
         }
     }
+  }
+  /************************************ MENU **************************************/
+
+  #carte .empty-like{
+    background-color: #f2f2f2;
+  }
+
+  /************************************ ACCUEIL **************************************/
+
+  #carte-restaurants .empty-like{
+      background-color: red;
   }
 
 /************************************  **************************************/
