@@ -45,23 +45,28 @@
   animation: appearance 0.5s;
 }
 .menu-section .delay-2 {
-  animation: appearance 1s;
-}
-.menu-section .delay-3 {
   animation: appearance 1.5s;
 }
-.menu-section .delay-4 {
+.menu-section .delay-3 {
   animation: appearance 2s;
+}
+.menu-section .delay-4 {
+  animation: appearance 2.5s;
 }
 
 @keyframes appearance {
   from {
     transform: scale(0.1);
+    transform: translateY(20px);
+    opacity: 0;
   }
   to {
     transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
+/************************************** ANIMATION  CHECK **********************************************/
 .btn-menu {
   display: flex;
   flex-direction: row;
@@ -85,8 +90,6 @@
   flex-direction: column;
   padding: 5px;
   width: 90%;
-}
-.description-side p, .description-side h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -113,13 +116,13 @@
   padding: auto;
   height: 100%;
   display: none;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 .card-checked:hover {
   display: block;
-  width: 100px;
   background-color: #99e2d0;
   color: white;
-  animation: glissement 1s;
+  animation: glissement 1.5s;
 }
 
 @keyframes checked {
@@ -132,9 +135,9 @@
 }
 @keyframes glissement {
   from {
-    width: 0%;
+    width: 0px;
   }
   to {
-    width: 300%;
+    width: 300px;
   }
 }

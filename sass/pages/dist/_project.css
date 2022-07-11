@@ -5,6 +5,9 @@
   #header .logo {
     height: auto;
   }
+  #header .logo p {
+    font-size: 50px;
+  }
   #header .arrow {
     justify-content: space-around;
   }
@@ -29,7 +32,7 @@
     margin: 10px 0px 10px 0px;
   }
   #formulaire .menu-column {
-    width: 30%;
+    width: 33%;
   }
   #formulaire h2 {
     font-size: 20px;

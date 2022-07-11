@@ -74,18 +74,13 @@
 .block-heart:hover .empty-like {
   background-color: transparent;
   color: transparent;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
 }
 .block-heart .home-heart {
   background-color: white;
   font-size: 25px;
 }
 .block-heart .menu-heart {
-  background-color: #f2f2f2;
+  background-color: #f6f6f6;
   font-size: 25px;
 }
-
-/************************************ MENU **************************************/
-/************************************  **************************************/
-/************************************  **************************************/
-/************************************  **************************************/

@@ -138,6 +138,7 @@
 /************************************ MENU  **************************************/
 #carte {
   background-color: #f6f6f6;
+  padding-bottom: 40px;
   position: relative;
 }
 #carte #commander {

@@ -56,24 +56,29 @@
         animation: appearance .5s;
     }
     .delay-2{
-        animation: appearance 1s;
-    }
-    .delay-3{
         animation: appearance 1.5s;
     }
-    .delay-4{
+    .delay-3{
         animation: appearance 2s;
+    }
+    .delay-4{
+        animation: appearance 2.5s;
     }
  }
  @keyframes appearance {
     from {
         transform: scale(0.1);
+        transform: translateY(20px);
+        opacity: 0;
     }
     to {
         transform: scale(1);
+        transform: translateY(0px);
+        opacity: 1;
     }
  }
 
+ /************************************** ANIMATION  CHECK **********************************************/
 
  .btn-menu{
     display: flex;
@@ -95,15 +100,14 @@
        }
    }
     .description-side{
-       display: flex;
-       flex-direction: column;
-       padding: 5px;
-       width: 90%;
-        p, h3{
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-        }
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        width: 90%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
     }
     .price-side{
        display: flex;
@@ -125,12 +129,13 @@
        padding: auto;
        height: 100%;
        display: none;
+       transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+
        &:hover{
            display:block;
-           width: 100px;
            background-color: #99e2d0;
            color: white;
-           animation: glissement 1s;
+           animation: glissement 1.5s;
       }
     }
 
@@ -145,11 +150,11 @@
 
 @keyframes glissement {
    from{
-       width: 0%;
+       width: 0px;
    }
 
    to{
-       width: 300%;
+       width: 300px;
    }
 
 }
