@@ -1,17 +1,18 @@
 @charset "UTF-8";
 /************************************ Bouton degradé **************************************/
 .btn-degrad {
-  background: linear-gradient(150deg, #9356dc, #ff79DA);
+  background: linear-gradient(170deg, #ff79DA, #9356dc);
   width: 200px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 30px;
   border: none;
   text-decoration: none;
   color: white;
   font-size: 16px;
+  box-shadow: 2px 5px 6px;
 }
 .btn-degrad:hover {
-  background: linear-gradient(10deg, #c9abee, #fface8);
+  background: linear-gradient(170deg, #ffdff6, #ae80e5);
   transition: transform 0.2s;
   transform: scale(1.1);
 }
@@ -20,40 +21,40 @@
 .step {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  width: 85%;
+  width: 80%;
+  font-size: 16px;
+  font-weight: lighter;
   align-items: center;
-  height: 40px;
-  margin-top: 10px;
-  border: 1px solid #f6f6f6;
-  border-radius: 40px;
+  height: 35px;
+  margin-top: 25px;
+  border-radius: 25px;
   background-color: #f2f2f2;
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 2px 2px 8px #c2bfbf;
   padding: 20px 15px 20px 15px;
   transition-property: transform;
   transition-duration: 1000ms;
 }
 .step:hover {
-  transform: scale(1.1);
   background-color: #f5edfe;
   border-color: #f5edfe;
 }
+.step:hover i {
+  color: #9356dc;
+}
 .step .number {
-  background-color: #512c7e;
+  background-color: #9356dc;
   color: white;
-  align-items: center;
-  justify-content: center;
+  font-size: 12px;
   border-radius: 100%;
-  padding: 11px 14px 11px 14px;
+  padding: 5px 9px 5px 9px;
   margin-left: 10px;
+  position: relative;
+  right: 35px;
 }
 .step i {
-  padding: 15px 15px 15px 15px;
-  color: #512c7e;
-  margin: 10px;
-}
-.step p {
-  font-weight: bold;
+  padding: 15px 30px 15px 0px;
+  color: #5f5b5b;
+  font-size: 20px;
 }
 
 /************************************ Coeur  **************************************/
@@ -75,17 +76,16 @@
   color: transparent;
   transition-duration: 0.5s;
 }
+.block-heart .home-heart {
+  background-color: white;
+  font-size: 25px;
+}
+.block-heart .menu-heart {
+  background-color: #f2f2f2;
+  font-size: 25px;
+}
 
 /************************************ MENU **************************************/
-#carte .empty-like {
-  background-color: #f2f2f2;
-}
-
-/************************************ ACCUEIL **************************************/
-#carte-restaurants .empty-like {
-  background-color: red;
-}
-
 /************************************  **************************************/
 /************************************  **************************************/
 /************************************  **************************************/

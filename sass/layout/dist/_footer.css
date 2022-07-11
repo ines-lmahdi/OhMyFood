@@ -1,0 +1,24 @@
+#footer {
+  background-color: #353535;
+  padding: 15px 0px 40px 15px;
+  color: #f2f2f2;
+}
+#footer h2 {
+  font-size: 18px;
+  padding: 10px 0px 10px 10px;
+  font-weight: lighter;
+}
+#footer li {
+  list-style: none;
+  padding: 5px;
+}
+#footer li a {
+  text-decoration: none;
+  color: #f2f2f2;
+}
+#footer li a i {
+  padding-right: 5px;
+}
+#footer li a .fa-utensils {
+  margin-right: 5px;
+}

@@ -1,17 +1,18 @@
 
 /************************************ Bouton degradé **************************************/
 .btn-degrad{
-    background: linear-gradient(150deg,#9356dc, #ff79DA);
+    background: linear-gradient(170deg, #ff79DA, #9356dc);
     width: 200px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 30px;
     border:none;
     text-decoration: none;
     color: white;
     font-size: 16px;
+    box-shadow: 2px 5px 6px;
 
     &:hover{
-        background: linear-gradient(10deg, lighten(#9356dc, 20%), lighten(#ff79DA, 10%));
+        background: linear-gradient(170deg, lighten( #ff79DA, 20%), lighten(#9356dc, 10%));
         transition: transform .2s;
         transform: scale(1.1);
         }
@@ -21,42 +22,41 @@
 .step{
     display: flex;
     flex-direction: row;
-    text-align: center;
-    width: 85%;
+    width: 80%;
+    font-size: 16px;
+    font-weight: lighter;
     align-items: center;
-    height: 40px;
-    margin-top: 10px;
-    border: 1px solid rgba(246,246,246,255);
-    border-radius: 40px;
+    height: 35px;
+    margin-top: 25px;
+    border-radius:25px;
     background-color: #f2f2f2;
-    box-shadow: 2px 2px 2px grey;
+    box-shadow: 2px 2px 8px rgb(194, 191, 191);
     padding: 20px 15px 20px 15px;
     transition-property: transform;
     transition-duration: 1000ms;
 
     &:hover{
-        transform: scale(1.1);
         background-color:rgba(245,237,254,255);
         border-color:rgba(245,237,254,255);
+        i{
+            color:#9356dc
+        }
     }
     .number{
-        background-color: #512c7e;
+        background-color: #9356dc;
         color: white;
-        align-items: center;
-        justify-content: center;
+        font-size: 12px;
         border-radius: 100%;
-        padding: 11px 14px 11px 14px;
+        padding: 5px 9px 5px 9px;
         margin-left: 10px;
+        position: relative;
+        right: 35px;
     }
     i
     {
-        padding: 15px 15px 15px 15px;
-        color:#512c7e;
-        margin: 10px;
-    }
-
-    p{
-        font-weight: bold;
+        padding: 15px 30px 15px 0px;
+        color: rgb(95, 91, 91);
+        font-size: 20px;
     }
 }
 /************************************ Coeur  **************************************/
@@ -64,7 +64,6 @@
 .block-heart{
     cursor: pointer;
     position: relative;
-    //background-color: white;
 
     .full-like{
         background: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356dc));
@@ -74,7 +73,6 @@
     .empty-like{
         color: black;
         position: absolute;
-
     }
     &:hover{
         .empty-like{
@@ -83,18 +81,18 @@
             transition-duration: .5s;
         }
     }
+    .home-heart{
+        background-color: white;
+        font-size: 25px;
+    }
+    .menu-heart{
+        background-color: #f2f2f2;
+        font-size: 25px;
+    }
   }
   /************************************ MENU **************************************/
 
-  #carte .empty-like{
-    background-color: #f2f2f2;
-  }
 
-  /************************************ ACCUEIL **************************************/
-
-  #carte-restaurants .empty-like{
-      background-color: red;
-  }
 
 /************************************  **************************************/
 /************************************  **************************************/

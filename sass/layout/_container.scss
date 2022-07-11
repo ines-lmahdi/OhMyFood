@@ -30,8 +30,8 @@
     align-items: center;
 }
 
-.fonction{
-    margin-bottom: 20px;
+.fonction, #restaurants{
+    padding: 50px 0px 50px 0px;
 }
 
 /************************************ ACCUEIL Cartes restaurants **************************************/
@@ -41,23 +41,19 @@
     width: 100%;
     article{
         position: relative;
+        object-fit: cover;
 
         .new-message{
             position: absolute;
-            width: 100px;
             background-color: rgb(153,226,208);
             color: rgb(0,135,102);
-            border-radius: 5px;
-            font-size: 16px;
+            border-radius: 3px;
+            font-size: 14px;
             text-align: center;
-            padding: 8px;
-            right: 30px;
-            top: 35px;
+            padding: 6px 10px 6px 10px;
+            right: 20px;
+            top: 25px;
         }
-
-    }
-    .test{
-        padding-left: 15px;
     }
     a{
         text-decoration: none;
@@ -68,12 +64,13 @@
         margin: 0px;
 
     }
+
     figure{
         height: 230px;
         border-radius: 20px;
         background-color: white;
-        margin: 0px 0px 20px 0px;
-        box-shadow: 5px 5px 5px rgb(185, 182, 182);
+        box-shadow: 5px 5px 5px #d8d5d5;
+        margin: 10px 0px 10px 0px;
 
         img{
             width: 100%;
@@ -87,7 +84,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            position:relative;
+            position: relative;
+
             .left-side{
                 display: flex;
                 flex-direction: column;
@@ -95,11 +93,11 @@
                     margin:0px;
                     font-weight: bold;
                     font-size: 18px;
-                    padding-bottom: 10px;
+                    padding-bottom: 5px;
                 }
 
                 p{
-                    font-size: 16px;
+                    font-size: 18px;
                 }
             }
             .right-side{
@@ -149,8 +147,7 @@
     width: 100%;
     border-radius: 50px 50px 0px 0px;
     position: absolute;
-    top: -80px;
-
+    top: -75px;
 }
 
 /************************************ MENU  **************************************/
@@ -162,7 +159,6 @@
         display: flex;
         justify-content: center;
         padding: 20px;
-
     }
         #formulaire{
             display: flex;
