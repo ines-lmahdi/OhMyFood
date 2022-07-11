@@ -19,6 +19,11 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -26,7 +31,6 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-  line-height: 1;
   font-family: 'Roboto';
 }
 

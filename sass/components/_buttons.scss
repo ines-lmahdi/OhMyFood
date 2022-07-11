@@ -1,6 +1,7 @@
+
 /************************************ Bouton degradé **************************************/
 .btn-degrad{
-    background: linear-gradient(150deg,$color-primary, $color-secondary);
+    background: linear-gradient(150deg,pink, #512c7e);
     width: 200px;
     padding: 10px;
     border-radius: 30px;
@@ -8,12 +9,9 @@
     text-decoration: none;
     color: white;
     font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     &:hover{
-        background: linear-gradient(10deg, lighten($color-primary, 20%), lighten($color-secondary, 10%));
+        background: linear-gradient(10deg, lighten(pink, 20%), lighten(#512c7e, 10%));
         transition: transform .2s;
         transform: scale(1.1);
         }
@@ -29,7 +27,7 @@
     height: 40px;
     margin-top: 10px;
     border: 1px solid rgba(246,246,246,255);
-    background-color: $background-grey;
+    background-color: grey;
     border-radius: 40px;
     box-shadow: 2px 2px 2px grey;
     padding: 20px 15px 20px 15px;

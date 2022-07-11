@@ -20,13 +20,14 @@
     align-items: center;
     text-align: center;
     padding: 30px 20px 60px 20px;
-
 }
 
 /************************************ ACCUEIL Fonctionnement **************************************/
 
 .fonctionnement{
     margin-bottom: 20px;
+    margin: auto;
+    background-color: pink;
 }
 
 /************************************ ACCUEIL Cartes restaurants **************************************/
@@ -40,7 +41,6 @@
     article{
         position: relative;
         width: 96%;
-        margin-left: 13px;
 
         .new-message{
             position: absolute;
@@ -55,6 +55,9 @@
             top: 15px;
         }
 
+    }
+    .test{
+        padding-left: 15px;
     }
     a{
         text-decoration: none;

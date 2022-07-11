@@ -1,0 +1,68 @@
+@media screen and (min-width: 768px) {
+  #header {
+    align-items: center;
+  }
+  #header .logo {
+    height: auto;
+  }
+  #header .arrow {
+    justify-content: space-around;
+  }
+
+  .title-menu {
+    justify-content: center;
+  }
+  .title-menu .fa-heart {
+    padding-left: 30px;
+  }
+
+  #formulaire {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: space-around;
+  }
+  #formulaire .menu-section {
+    width: 100%;
+  }
+  #formulaire .menu-section .btn-menu {
+    margin: 10px 0px 10px 0px;
+  }
+  #formulaire .menu-column {
+    width: 30%;
+  }
+  #formulaire h2 {
+    font-size: 20px;
+  }
+
+  /******************************** RESPONSIVE ACCUEIL **********************************/
+  .fonction .fonctionnement {
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .fonction .fonctionnement .step {
+    margin: 20px;
+    width: 30%;
+    padding: none;
+  }
+  .fonction .fonctionnement .number {
+    position: relative;
+    left: -35px;
+  }
+
+  #restaurants #cartes-restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  #restaurants #cartes-restaurant article {
+    width: 45%;
+  }
+
+  #footer {
+    text-align: center;
+  }
+}

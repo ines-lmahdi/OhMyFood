@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/************************************ Bouton degradé **************************************/
+.btn-degrad {
+  background: linear-gradient(150deg, pink, #512c7e);
+  width: 200px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+.btn-degrad:hover {
+  background: linear-gradient(10deg, white, #6939a4);
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+/************************************ Etape Fonctionnement **************************************/
+.step {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 85%;
+  align-items: center;
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid #f6f6f6;
+  background-color: grey;
+  border-radius: 40px;
+  box-shadow: 2px 2px 2px grey;
+  padding: 20px 15px 20px 15px;
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.step:hover {
+  transform: scale(1.1);
+  background-color: #f5edfe;
+  border-color: #f5edfe;
+}
+.step .number {
+  background-color: #512c7e;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 11px 14px 11px 14px;
+  position: absolute;
+  margin-left: 10px;
+}
+.step i {
+  padding: 15px 15px 15px 15px;
+  color: #512c7e;
+  margin: 10px;
+}
+.step p {
+  font-weight: bold;
+}
+
+/************************************ Coeur  **************************************/
+.block-heart {
+  cursor: pointer;
+  position: relative;
+}
+.block-heart .full-like {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-heart .empty-like {
+  color: black;
+  position: absolute;
+}
+.block-heart:hover .empty-like {
+  background-color: transparent;
+  color: transparent;
+  transition-duration: 0.5s;
+}
+
+/************************************ MENU **************************************/
+#carte .empty-like {
+  background-color: #f2f2f2;
+}
+
+/************************************ ACCUEIL **************************************/
+#carte-restaurants .empty-like {
+  background-color: red;
+}
+
+/************************************  **************************************/
+/************************************  **************************************/
+/************************************  **************************************/
