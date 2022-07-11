@@ -18,7 +18,12 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 30px 20px 60px 20px;
+  padding: 30px 20px 100px 20px;
+}
+.banner .btn-explore {
+  align-items: center;
+  position: relative;
+  top: 30px;
 }
 
 /************************************ ACCUEIL Fonctionnement **************************************/
