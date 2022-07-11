@@ -21,7 +21,6 @@ html {
 
 .banner h2 {
   font-size: 20px;
-  padding-bottom: 20px;
   font-weight: lighter;
 }
 
@@ -32,13 +31,27 @@ html {
 }
 
 /******************************* MENU ******************************/
+.title-menu h1 {
+  font-size: 26px;
+  text-align: center;
+}
+
 #formulaire h2 {
   font-weight: 100;
-  margin: 10px;
+  margin: 20px;
   text-align: left;
+  padding-bottom: 15px;
 }
 #formulaire h2 .underline {
   border-bottom: solid 3px #99e2d0;
+  padding-bottom: 4px;
+}
+
+.btn-menu h3 {
+  font-size: 17px;
+}
+.btn-menu p {
+  font-weight: 100;
 }
 
 .description-side {
