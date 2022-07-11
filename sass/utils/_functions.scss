@@ -28,16 +28,16 @@
 }
 @keyframes chargeur{
     0%{
-        color: $color-primary;
+        color:#9356dc;
 
     }
 
     50%{
-        color:$color-secondary;
+        color:#ff79DA;
     }
 
     75%{
-        color: $color-tertiary;
+        color: #99E2D0;
         opacity: 1;
 
     }
@@ -99,12 +99,11 @@
        flex-direction: column;
        padding: 5px;
        width: 90%;
-
-       p, h3{
-           text-overflow: ellipsis;
-           white-space: nowrap;
-           overflow: hidden;
-       }
+        p, h3{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
     }
     .price-side{
        display: flex;

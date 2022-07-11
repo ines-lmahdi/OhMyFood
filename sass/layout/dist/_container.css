@@ -1,0 +1,176 @@
+/************* ACCUEIL Belleville, Paris ************/
+.localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #eaeaea;
+  align-items: center;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+.localisation .fa-location-dot {
+  padding-right: 10px;
+}
+
+.banner {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px 60px 20px;
+}
+
+/************************************ ACCUEIL Fonctionnement **************************************/
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonction {
+  margin-bottom: 20px;
+}
+
+/************************************ ACCUEIL Cartes restaurants **************************************/
+#restaurants {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+#restaurants article {
+  position: relative;
+}
+#restaurants article .new-message {
+  position: absolute;
+  width: 100px;
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px;
+  right: 30px;
+  top: 35px;
+}
+#restaurants .test {
+  padding-left: 15px;
+}
+#restaurants a {
+  text-decoration: none;
+}
+#restaurants .left-side {
+  color: black;
+  font-size: 14px;
+  margin: 0px;
+}
+#restaurants figure {
+  height: 230px;
+  border-radius: 20px;
+  background-color: white;
+  margin: 0px 0px 20px 0px;
+  box-shadow: 5px 5px 5px #b9b6b6;
+}
+#restaurants figure img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+#restaurants figure figcaption {
+  padding: 5px 15px 5px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+#restaurants figure figcaption .left-side {
+  display: flex;
+  flex-direction: column;
+}
+#restaurants figure figcaption .left-side h3 {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+#restaurants figure figcaption .left-side p {
+  font-size: 16px;
+}
+#restaurants figure figcaption .right-side {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+#restaurants {
+  width: 100%;
+}
+#restaurants #cartes-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#restaurants #cartes-restaurant article {
+  width: 90%;
+}
+
+/************* MENU Image des restaurants ************/
+#banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/************* MENU Titre des restaurant ************/
+.title-menu {
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 0px 20px 0px;
+  background-color: #f6f6f6;
+  width: 100%;
+  border-radius: 50px 50px 0px 0px;
+  position: absolute;
+  top: -80px;
+}
+
+/************************************ MENU  **************************************/
+#carte {
+  background-color: #f6f6f6;
+  position: relative;
+}
+#carte #commander {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#carte #formulaire {
+  display: flex;
+  flex-direction: column;
+}
+#carte #formulaire .menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#carte #formulaire .menu-section .btn-menu {
+  background-color: #FFFFFF;
+  border: none;
+  height: 60px;
+  width: 90%;
+  margin-bottom: 10px;
+  text-align: left;
+  border-radius: 10px;
+  align-items: center;
+}
+#carte #formulaire .menu-section .btn-menu h3 {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+#carte #formulaire .menu-section .btn-menu .menu-price {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  padding: 10px;
+}
