@@ -1,3 +1,666 @@
-.loader{background-color:rgba(246,246,246,.8);inset:0;position:fixed;z-index:100;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-animation:disappear 3s forwards;animation:disappear 3s forwards}.loader .fa-bell-concierge{font-size:150px;-webkit-animation:chargeur 3s;animation:chargeur 3s;color:green}@-webkit-keyframes disappear{99%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(0);transform:scale(0);visibility:hidden}}@keyframes disappear{99%{-webkit-transform:scale(1);transform:scale(1)}100%{-webkit-transform:scale(0);transform:scale(0);visibility:hidden}}@-webkit-keyframes chargeur{0%{color:#9356dc}50%{color:#ff79da}75%{color:#99e2d0;opacity:1}100%{-webkit-transform:rotate(360deg) scale(1.5);transform:rotate(360deg) scale(1.5);opacity:0}}@keyframes chargeur{0%{color:#9356dc}50%{color:#ff79da}75%{color:#99e2d0;opacity:1}100%{-webkit-transform:rotate(360deg) scale(1.5);transform:rotate(360deg) scale(1.5);opacity:0}}.menu-section .delay-1{-webkit-animation:appearance .5s;animation:appearance .5s}.menu-section .delay-2{-webkit-animation:appearance 1.5s;animation:appearance 1.5s}.menu-section .delay-3{-webkit-animation:appearance 2s;animation:appearance 2s}.menu-section .delay-4{-webkit-animation:appearance 2.5s;animation:appearance 2.5s}@-webkit-keyframes appearance{from{-webkit-transform:scale(0.1);transform:scale(0.1);-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}to{-webkit-transform:scale(1);transform:scale(1);-webkit-transform:translateY(0px);transform:translateY(0px);opacity:1}}@keyframes appearance{from{-webkit-transform:scale(0.1);transform:scale(0.1);-webkit-transform:translateY(20px);transform:translateY(20px);opacity:0}to{-webkit-transform:scale(1);transform:scale(1);-webkit-transform:translateY(0px);transform:translateY(0px);opacity:1}}.btn-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding-left:8px}.btn-menu:hover .card-checked{border-radius:0px 10px 10px 0px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:#99e2d0;color:#fff;width:50px;padding:0px 20px 0px 20px;-webkit-animation:glissement 1s;animation:glissement 1s}.description-side{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:5px;width:90%;-o-text-overflow:ellipsis;text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.price-side{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end;height:100%;width:10%}.fa-circle-check{font-size:30px;-webkit-animation:checked 1s;animation:checked 1s}.card-checked{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:auto;height:100%;display:none;-webkit-transition:width .4s ease-in-out,opacity .4s ease-in-out,-webkit-transform .4s ease-in-out;transition:width .4s ease-in-out,opacity .4s ease-in-out,-webkit-transform .4s ease-in-out;-o-transition:transform .4s ease-in-out,width .4s ease-in-out,opacity .4s ease-in-out;transition:transform .4s ease-in-out,width .4s ease-in-out,opacity .4s ease-in-out;transition:transform .4s ease-in-out,width .4s ease-in-out,opacity .4s ease-in-out,-webkit-transform .4s ease-in-out}.card-checked:hover{display:block;background-color:#99e2d0;color:#fff;-webkit-animation:glissement 1.5s;animation:glissement 1.5s}@-webkit-keyframes checked{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes checked{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@-webkit-keyframes glissement{from{width:0px}to{width:300px}}@keyframes glissement{from{width:0px}to{width:300px}}html{font-family:"Roboto"}.shrikhand{font-family:"Shrikhand"}.logo{font-family:"Shrikhand";font-size:30px}.title-font{font-size:24px;font-weight:bold;margin-bottom:20px}.banner h2{font-size:20px;font-weight:lighter}.fonction h2,#restaurants h2{font-size:23px;font-weight:bold;padding:0px 0px 10px 20px}.title-menu h1{font-size:26px;text-align:center;font-family:"Shrikhand"}#formulaire h2{font-weight:100;margin:20px;text-align:left}#formulaire h2 .underline{border-bottom:solid 3px #99e2d0;padding-bottom:4px}.btn-menu h3{font-size:17px}.btn-menu p{font-weight:100}.description-side{font-size:15px}html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{font-family:"Roboto"}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:"";content:none}table{border-collapse:collapse;border-spacing:0}.btn-degrad{background:-o-linear-gradient(280deg, #ff79DA, #9356dc);background:linear-gradient(170deg, #ff79DA, #9356dc);width:200px;padding:15px;border-radius:30px;border:none;text-decoration:none;color:#fff;font-size:16px;-webkit-box-shadow:2px 5px 6px;box-shadow:2px 5px 6px}.btn-degrad:hover{background:-o-linear-gradient(280deg, #ffdff6, #ae80e5);background:linear-gradient(170deg, #ffdff6, #ae80e5);-webkit-transition:-webkit-transform .2s;transition:-webkit-transform .2s;-o-transition:transform .2s;transition:transform .2s;transition:transform .2s, -webkit-transform .2s;-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}.step{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;width:80%;font-size:16px;font-weight:lighter;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:35px;margin-top:25px;border-radius:25px;background-color:#f2f2f2;-webkit-box-shadow:2px 2px 8px #c2bfbf;box-shadow:2px 2px 8px #c2bfbf;padding:20px 15px 20px 15px;-webkit-transition-property:-webkit-transform;transition-property:-webkit-transform;-o-transition-property:transform;transition-property:transform;transition-property:transform, -webkit-transform;-webkit-transition-duration:1000ms;-o-transition-duration:1000ms;transition-duration:1000ms}.step:hover{background-color:#f5edfe;border-color:#f5edfe}.step:hover i{color:#9356dc}.step .number{background-color:#9356dc;color:#fff;font-size:12px;border-radius:100%;padding:5px 9px 5px 9px;margin-left:10px;position:relative;right:35px}.step i{padding:15px 30px 15px 0px;color:#5f5b5b;font-size:20px}.block-heart{cursor:pointer;position:relative}.block-heart .full-like{background:-webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356dc));-webkit-background-clip:text;-webkit-text-fill-color:rgba(0,0,0,0)}.block-heart .empty-like{color:#000;position:absolute}.block-heart:hover .empty-like{background-color:rgba(0,0,0,0);color:rgba(0,0,0,0);-webkit-transition-duration:1s;-o-transition-duration:1s;transition-duration:1s}.block-heart .home-heart{background-color:#fff;font-size:25px}.block-heart .menu-heart{background-color:#f6f6f6;font-size:25px}.logo{text-align:center}.arrow a{color:#000;text-decoration:none;font-size:30px;position:absolute;left:15px;top:5px}#footer{background-color:#353535;padding:15px 0px 40px 15px;color:#f2f2f2}#footer h2{font-size:18px;padding:10px 0px 10px 10px;font-weight:lighter}#footer li{list-style:none;padding:5px}#footer li a{text-decoration:none;color:#f2f2f2}#footer li a i{padding-right:5px}#footer li a .fa-utensils{margin-right:5px}.localisation{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;background-color:#eaeaea;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:50px;-webkit-box-shadow:rgba(0,0,0,.06) 0px 2px 4px 0px inset;box-shadow:rgba(0,0,0,.06) 0px 2px 4px 0px inset}.localisation .fa-location-dot{padding-right:10px}.banner{background-color:#f6f6f6;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;padding:30px 20px 100px 20px}.banner .btn-explore{-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;top:30px}.fonctionnement{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.fonction,#restaurants{padding:50px 0px 50px 0px}#restaurants{background-color:#f6f6f6;width:100%}#restaurants article{position:relative;-o-object-fit:cover;object-fit:cover}#restaurants article .new-message{position:absolute;background-color:#99e2d0;color:#008766;border-radius:3px;font-size:14px;text-align:center;padding:6px 10px 6px 10px;right:20px;top:25px}#restaurants a{text-decoration:none}#restaurants .left-side{color:#000;font-size:14px;margin:0px}#restaurants figure{height:230px;border-radius:20px;background-color:#fff;-webkit-box-shadow:5px 5px 5px #d8d5d5;box-shadow:5px 5px 5px #d8d5d5;margin:10px 0px 10px 0px}#restaurants figure img{width:100%;height:70%;border-radius:20px 20px 0 0;-o-object-fit:cover;object-fit:cover}#restaurants figure figcaption{padding:5px 15px 5px 15px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;position:relative}#restaurants figure figcaption .left-side{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}#restaurants figure figcaption .left-side h3{margin:0px;font-weight:bold;font-size:18px;padding-bottom:5px}#restaurants figure figcaption .left-side p{font-size:18px}#restaurants figure figcaption .right-side{padding-top:10px;font-size:20px}#restaurants{width:100%}#restaurants #cartes-restaurant{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#restaurants #cartes-restaurant article{width:90%}#banner img{width:100%;height:300px;-o-object-fit:cover;object-fit:cover}.title-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:distribute;justify-content:space-around;padding-top:40px;background-color:#f6f6f6;width:100%;border-radius:30px 30px 0px 0px;position:absolute;top:-70px}#carte{background-color:#f6f6f6;padding-bottom:40px;position:relative}#carte #commander{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;padding:20px}#carte #formulaire{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:40px 0px 40px 0px}#carte #formulaire .menu-section{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#carte #formulaire .menu-section .btn-menu{background-color:#fff;-webkit-box-shadow:2px 5px 6px #d8d5d5;box-shadow:2px 5px 6px #d8d5d5;border:none;height:70px;width:90%;margin:10px 0px 10px 0px;text-align:left;border-radius:10px;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#carte #formulaire .menu-section .btn-menu h3{font-weight:bold;padding-bottom:5px}#carte #formulaire .menu-section .btn-menu .menu-price{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;font-weight:bold;padding:10px}@media screen and (min-width: 768px){#header{-webkit-box-align:center;-ms-flex-align:center;align-items:center}#header .logo{height:auto}#header .logo p{font-size:50px}#header .arrow{-ms-flex-pack:distribute;justify-content:space-around}.title-menu{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.title-menu .fa-heart{padding-left:30px}#formulaire .menu-position{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-ms-flex-pack:distribute;justify-content:space-around}#formulaire .menu-section{width:100%}#formulaire .menu-section .btn-menu{margin:10px 0px 10px 0px}#formulaire .menu-column{width:33%}#formulaire h2{font-size:20px}.fonction .fonctionnement{justify-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}.fonction .fonctionnement .step{margin:20px;width:30%;padding:none}.fonction .fonctionnement .number{position:relative;left:-35px}#restaurants #cartes-restaurant{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-pack:distribute;justify-content:space-around;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:15px}#restaurants #cartes-restaurant article{width:45%}#footer{text-align:center}}
+@charset "UTF-8";
+/****************************************** ANIMATION LOADER **********************************************/
+.loader {
+  background-color: rgba(246, 246, 246, 0.8);
+  inset: 0;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: disappear 3s forwards;
+}
+.loader .fa-bell-concierge {
+  font-size: 150px;
+  animation: chargeur 3s;
+  color: green;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvdXRpbHMvX2Z1bmN0aW9ucy5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9iYXNlL190eXBvZ3JhcGh5LnNjc3MiLCIuLi8uLi8uLi9zYXNzL2Jhc2UvcmVzZXQuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvY29tcG9uZW50cy9fYnV0dG9ucy5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9sYXlvdXQvX2hlYWRlci5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9sYXlvdXQvX2Zvb3Rlci5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9sYXlvdXQvX2NvbnRhaW5lci5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9wYWdlcy9fcHJvamVjdC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUdBLFFBQ0kscUNBQUEsQ0FDQSxPQUFBLENBQ0EsY0FBQSxDQUNBLFdBQUEsQ0FDQSxtQkFBQSxDQUFBLG1CQUFBLENBQUEsWUFBQSxDQUNBLHdCQUFBLENBQUEscUJBQUEsQ0FBQSxrQkFBQSxDQUNBLHVCQUFBLENBQUEsb0JBQUEsQ0FBQSxzQkFBQSxDQUNBLHVDQUFBLENBQUEsK0JBQUEsQ0FFQSwyQkFDSSxlQUFBLENBQ0EsNkJBQUEsQ0FBQSxxQkFBQSxDQUNBLFdBQUEsQ0FHUiw2QkFDSSxJQUNJLDBCQUFBLENBQUEsa0JBQUEsQ0FFSixLQUNJLDBCQUFBLENBQUEsa0JBQUEsQ0FDQSxpQkFBQSxDQUFBLENBTlIscUJBQ0ksSUFDSSwwQkFBQSxDQUFBLGtCQUFBLENBRUosS0FDSSwwQkFBQSxDQUFBLGtCQUFBLENBQ0EsaUJBQUEsQ0FBQSxDQUdSLDRCQUNJLEdBQ0ksYUFBQSxDQUlKLElBQ0ksYUFBQSxDQUdKLElBQ0ksYUFBQSxDQUNBLFNBQUEsQ0FHSixLQUNJLDJDQUFBLENBQUEsbUNBQUEsQ0FDQSxTQUFBLENBQUEsQ0FqQlIsb0JBQ0ksR0FDSSxhQUFBLENBSUosSUFDSSxhQUFBLENBR0osSUFDSSxhQUFBLENBQ0EsU0FBQSxDQUdKLEtBQ0ksMkNBQUEsQ0FBQSxtQ0FB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 */
+@keyframes disappear {
+  99% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    visibility: hidden;
+  }
+}
+@keyframes chargeur {
+  0% {
+    color: #9356dc;
+  }
+  50% {
+    color: #ff79DA;
+  }
+  75% {
+    color: #99E2D0;
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(1.5);
+    opacity: 0;
+  }
+}
+/************************************** ANIMATION  APPARITION DU MENU **********************************************/
+.menu-section .delay-1 {
+  animation: appearance 0.5s;
+}
+.menu-section .delay-2 {
+  animation: appearance 1.5s;
+}
+.menu-section .delay-3 {
+  animation: appearance 2s;
+}
+.menu-section .delay-4 {
+  animation: appearance 2.5s;
+}
+
+@keyframes appearance {
+  from {
+    transform: scale(0.1);
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/************************************** ANIMATION  CHECK **********************************************/
+.btn-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 8px;
+}
+.btn-menu:hover .card-checked {
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: white;
+  width: 50px;
+  padding: 0px 20px 0px 20px;
+  animation: glissement 1s;
+}
+
+.description-side {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  width: 90%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.price-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  width: 10%;
+}
+
+.fa-circle-check {
+  font-size: 30px;
+  animation: checked 1s;
+}
+
+.card-checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
+  height: 100%;
+  display: none;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.card-checked:hover {
+  display: block;
+  background-color: #99e2d0;
+  color: white;
+  animation: glissement 1.5s;
+}
+
+@keyframes checked {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glissement {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 300px;
+  }
+}
+/******************************* GENERALE ******************************/
+html {
+  font-family: "Roboto";
+}
+
+.shrikhand {
+  font-family: "Shrikhand";
+}
+
+/******************************* ACCUEIL ******************************/
+.logo {
+  font-family: "Shrikhand";
+  font-size: 30px;
+}
+
+.title-font {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.banner h2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.number {
+  color: #ffffff;
+  font-size: 12px;
+}
+.number i {
+  color: rgb(95, 91, 91);
+  font-size: 20px;
+}
+
+.fonction h2, #restaurants h2 {
+  font-size: 23px;
+  font-weight: bold;
+  padding: 0px 0px 10px 20px;
+}
+
+.new-message {
+  color: rgb(0, 135, 102);
+  font-size: 14px;
+}
+
+.left-side {
+  color: black;
+  font-size: 14px;
+  margin: 0px;
+}
+.left-side h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.left-side p {
+  font-size: 18px;
+}
+
+.right-side {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+/******************************* MENU ******************************/
+.arrow a {
+  color: #000000;
+  font-size: 30px;
+}
+
+.title-menu h1 {
+  font-size: 26px;
+  text-align: center;
+  font-family: "Shrikhand";
+}
+
+#formulaire h2 {
+  font-weight: 100;
+  margin: 20px;
+  text-align: left;
+}
+#formulaire .underline {
+  border-bottom: solid 3px #99e2d0;
+  padding-bottom: 4px;
+}
+#formulaire .btn-menu h3 {
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+#formulaire .btn-menu p {
+  font-weight: 100;
+}
+#formulaire .btn-menu .menu-price {
+  font-weight: bold;
+}
+#formulaire .btn-menu .description-side {
+  font-size: 15px;
+}
+
+/******************************* BOUTON ******************************/
+.btn-degrad {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/******************************* HEART ******************************/
+.home-heart, .menu-heart {
+  font-size: 25px;
+}
+
+/******************************* FOOTER ******************************/
+#footer {
+  color: #f2f2f2;
+}
+#footer h2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+#footer h2 a {
+  color: #f2f2f2;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/************************************ Bouton degradé **************************************/
+.btn-degrad {
+  background: linear-gradient(170deg, #ff79DA, #9356dc);
+  width: 200px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  box-shadow: 2px 5px 6px;
+}
+.btn-degrad:hover {
+  background: linear-gradient(170deg, #ffdff6, #ae80e5);
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+/************************************ Etape Fonctionnement **************************************/
+.step {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  font-size: 16px;
+  font-weight: lighter;
+  align-items: center;
+  height: 35px;
+  margin-top: 25px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 8px rgb(194, 191, 191);
+  padding: 20px 15px 20px 15px;
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.step:hover {
+  background-color: rgb(245, 237, 254);
+  border-color: rgb(245, 237, 254);
+}
+.step:hover i {
+  color: #9356dc;
+}
+.step .number {
+  background-color: #9356dc;
+  color: white;
+  font-size: 12px;
+  border-radius: 100%;
+  padding: 5px 9px 5px 9px;
+  margin-left: 10px;
+  position: relative;
+  right: 35px;
+}
+.step i {
+  padding: 15px 30px 15px 0px;
+  color: rgb(95, 91, 91);
+  font-size: 20px;
+}
+
+/************************************ Coeur  **************************************/
+.block-heart {
+  cursor: pointer;
+  position: relative;
+}
+.block-heart .full-like {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-heart .empty-like {
+  color: black;
+  position: absolute;
+}
+.block-heart:hover .empty-like {
+  background-color: transparent;
+  color: transparent;
+  transition-duration: 1s;
+}
+.block-heart .home-heart {
+  background-color: white;
+  font-size: 25px;
+}
+.block-heart .menu-heart {
+  background-color: #f6f6f6;
+  font-size: 25px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.arrow a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
+#footer {
+  background-color: rgb(53, 53, 53);
+  padding: 15px 0px 40px 15px;
+}
+#footer h2 {
+  padding: 10px 0px 10px 10px;
+}
+#footer li {
+  list-style: none;
+  padding: 5px;
+}
+#footer li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+#footer li a i {
+  padding-right: 5px;
+}
+#footer li a .fa-utensils {
+  margin-right: 5px;
+}
+
+/************* ACCUEIL Belleville, Paris ************/
+.localisation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(234, 234, 234);
+  align-items: center;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+.localisation .fa-location-dot {
+  padding-right: 10px;
+}
+
+.banner {
+  background-color: rgb(246, 246, 246);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px 20px 100px 20px;
+}
+.banner .btn-explore {
+  align-items: center;
+  position: relative;
+  top: 30px;
+}
+
+/************************************ ACCUEIL Fonctionnement **************************************/
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonction, #restaurants {
+  padding: 50px 0px 50px 0px;
+}
+
+/************************************ ACCUEIL Cartes restaurants **************************************/
+#restaurants {
+  background-color: rgb(246, 246, 246);
+  width: 100%;
+}
+#restaurants article {
+  position: relative;
+  object-fit: cover;
+}
+#restaurants article .new-message {
+  position: absolute;
+  background-color: rgb(153, 226, 208);
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px 10px 6px 10px;
+  right: 20px;
+  top: 25px;
+}
+#restaurants a {
+  text-decoration: none;
+}
+#restaurants figure {
+  height: 230px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 5px #d8d5d5;
+  margin: 10px 0px 10px 0px;
+}
+#restaurants figure img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+#restaurants figure figcaption {
+  padding: 5px 15px 5px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+#restaurants figure figcaption .left-side {
+  display: flex;
+  flex-direction: column;
+}
+#restaurants figure figcaption .left-side h3 {
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+#restaurants {
+  width: 100%;
+}
+#restaurants #cartes-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#restaurants #cartes-restaurant article {
+  width: 90%;
+}
+
+/************* MENU Image des restaurants ************/
+#banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/************* MENU Titre des restaurant ************/
+.title-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+  background-color: #f6f6f6;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  top: -70px;
+}
+
+/************************************ MENU  **************************************/
+#carte {
+  background-color: rgb(246, 246, 246);
+  padding-bottom: 40px;
+  position: relative;
+}
+#carte #commander {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+#carte #formulaire {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0px 40px 0px;
+}
+#carte #formulaire .menu-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#carte #formulaire .menu-section .btn-menu {
+  background-color: #FFFFFF;
+  box-shadow: 2px 5px 6px #d8d5d5;
+  border: none;
+  height: 70px;
+  width: 90%;
+  margin: 10px 0px 10px 0px;
+  text-align: left;
+  border-radius: 10px;
+  align-items: center;
+}
+#carte #formulaire .menu-section .btn-menu .menu-price {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    align-items: center;
+  }
+  #header .logo {
+    height: auto;
+  }
+  #header .logo p {
+    font-size: 50px;
+  }
+  #header .arrow {
+    justify-content: space-around;
+  }
+  .title-menu {
+    justify-content: center;
+  }
+  .title-menu .fa-heart {
+    padding-left: 30px;
+  }
+  #formulaire .menu-position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  #formulaire .menu-section {
+    width: 100%;
+  }
+  #formulaire .menu-section .btn-menu {
+    margin: 10px 0px 10px 0px;
+  }
+  #formulaire .menu-column {
+    width: 33%;
+  }
+  #formulaire h2 {
+    font-size: 20px;
+  }
+  /******************************** RESPONSIVE ACCUEIL **********************************/
+  .fonction .fonctionnement {
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+  .fonction .fonctionnement .step {
+    margin: 20px;
+    width: 30%;
+    padding: none;
+  }
+  .fonction .fonctionnement .number {
+    position: relative;
+    left: -35px;
+  }
+  #restaurants #cartes-restaurant {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  #restaurants #cartes-restaurant article {
+    width: 45%;
+  }
+  #footer {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

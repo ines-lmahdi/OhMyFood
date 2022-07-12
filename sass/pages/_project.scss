@@ -2,19 +2,23 @@
 
     #header{
        align-items: center;
+
        .logo{
            height: auto;
+
            p{
             font-size: 50px;
            }
        }
+
        .arrow{
            justify-content: space-around;
-
        }
    }
+
    .title-menu{
        justify-content: center;
+
        .fa-heart{
            padding-left: 30px;
        }
@@ -29,40 +33,47 @@
         flex-wrap: nowrap;
         justify-content: space-around;
        }
+
        .menu-section{
            width: 100%;
+
            .btn-menu{
                margin: 10px 0px 10px 0px;
            }
        }
+
        .menu-column{
            width: 33%;
        }
-       h2{
-       font-size: 20px;
+
+        h2{
+        font-size: 20px;
        }
    }
 
         /******************************** RESPONSIVE ACCUEIL **********************************/
         .fonction{
+
             .fonctionnement{
                 justify-items: center;
                 display: flex;
                 flex-direction: row;
+
                 .step{
                     margin: 20px;
                     width: 30%;
                     padding: none;
                 }
+
                 .number{
                     position: relative;
                     left: -35px;
                }
-
             }
         }
 
         #restaurants{
+
             #cartes-restaurant{
                 display: flex;
                 flex-direction: row;
@@ -70,11 +81,13 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 padding: 15px;
+
                 article{
                     width: 45%;
                 }
+            }
         }
-    }
+
     #footer{
         text-align: center;
     }

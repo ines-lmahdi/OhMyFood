@@ -49,9 +49,7 @@
 #restaurants article .new-message {
   position: absolute;
   background-color: #99e2d0;
-  color: #008766;
   border-radius: 3px;
-  font-size: 14px;
   text-align: center;
   padding: 6px 10px 6px 10px;
   right: 20px;
@@ -59,11 +57,6 @@
 }
 #restaurants a {
   text-decoration: none;
-}
-#restaurants .left-side {
-  color: black;
-  font-size: 14px;
-  margin: 0px;
 }
 #restaurants figure {
   height: 230px;
@@ -91,16 +84,7 @@
 }
 #restaurants figure figcaption .left-side h3 {
   margin: 0px;
-  font-weight: bold;
-  font-size: 18px;
   padding-bottom: 5px;
-}
-#restaurants figure figcaption .left-side p {
-  font-size: 18px;
-}
-#restaurants figure figcaption .right-side {
-  padding-top: 10px;
-  font-size: 20px;
 }
 
 #restaurants {
@@ -167,13 +151,8 @@
   border-radius: 10px;
   align-items: center;
 }
-#carte #formulaire .menu-section .btn-menu h3 {
-  font-weight: bold;
-  padding-bottom: 5px;
-}
 #carte #formulaire .menu-section .btn-menu .menu-price {
   display: flex;
   justify-content: flex-end;
-  font-weight: bold;
   padding: 10px;
 }

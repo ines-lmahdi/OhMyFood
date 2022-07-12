@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/************************** ANIMATION LOADER *******************************/
+/****************************************** ANIMATION LOADER **********************************************/
 .loader {
   background-color: rgba(246, 246, 246, 0.8);
   inset: 0;
@@ -41,28 +41,33 @@
     opacity: 0;
   }
 }
-/************************** ANIMATION  APPARITION DU MENU *******************************/
+/************************************** ANIMATION  APPARITION DU MENU **********************************************/
 .menu-section .delay-1 {
   animation: appearance 0.5s;
 }
 .menu-section .delay-2 {
-  animation: appearance 1s;
-}
-.menu-section .delay-3 {
   animation: appearance 1.5s;
 }
-.menu-section .delay-4 {
+.menu-section .delay-3 {
   animation: appearance 2s;
+}
+.menu-section .delay-4 {
+  animation: appearance 2.5s;
 }
 
 @keyframes appearance {
   from {
     transform: scale(0.1);
+    transform: translateY(20px);
+    opacity: 0;
   }
   to {
     transform: scale(1);
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
+/************************************** ANIMATION  CHECK **********************************************/
 .btn-menu {
   display: flex;
   flex-direction: row;
@@ -86,8 +91,6 @@
   flex-direction: column;
   padding: 5px;
   width: 90%;
-}
-.description-side p, .description-side h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -114,13 +117,13 @@
   padding: auto;
   height: 100%;
   display: none;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
 }
 .card-checked:hover {
   display: block;
-  width: 100px;
   background-color: #99e2d0;
   color: white;
-  animation: glissement 1s;
+  animation: glissement 1.5s;
 }
 
 @keyframes checked {
@@ -133,10 +136,10 @@
 }
 @keyframes glissement {
   from {
-    width: 0%;
+    width: 0px;
   }
   to {
-    width: 300%;
+    width: 300px;
   }
 }
 /******************************* GENERALE ******************************/
@@ -155,34 +158,111 @@ html {
 }
 
 .title-font {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .banner h2 {
   font-size: 20px;
-  padding-bottom: 20px;
+  font-weight: lighter;
 }
 
-.fonction h2, .restaurants h2 {
-  font-size: 24px;
+.number {
+  color: #ffffff;
+  font-size: 12px;
+}
+.number i {
+  color: #5f5b5b;
+  font-size: 20px;
+}
+
+.fonction h2, #restaurants h2 {
+  font-size: 23px;
   font-weight: bold;
-  padding: 20px;
+  padding: 0px 0px 10px 20px;
+}
+
+.new-message {
+  color: #008766;
+  font-size: 14px;
+}
+
+.left-side {
+  color: black;
+  font-size: 14px;
+  margin: 0px;
+}
+.left-side h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+.left-side p {
+  font-size: 18px;
+}
+
+.right-side {
+  padding-top: 10px;
+  font-size: 20px;
 }
 
 /******************************* MENU ******************************/
-#formulaire h2 {
-  font-weight: 100;
-  margin: 10px;
-  text-align: left;
-}
-#formulaire h2 .underline {
-  border-bottom: solid 3px #333;
+.arrow a {
+  color: #000000;
+  font-size: 30px;
 }
 
-.description-side {
+.title-menu h1 {
+  font-size: 26px;
+  text-align: center;
+  font-family: "Shrikhand";
+}
+
+#formulaire h2 {
+  font-weight: 100;
+  margin: 20px;
+  text-align: left;
+}
+#formulaire .underline {
+  border-bottom: solid 3px #99e2d0;
+  padding-bottom: 4px;
+}
+#formulaire .btn-menu h3 {
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 5px;
+}
+#formulaire .btn-menu p {
+  font-weight: 100;
+}
+#formulaire .btn-menu .menu-price {
+  font-weight: bold;
+}
+#formulaire .btn-menu .description-side {
   font-size: 15px;
+}
+
+/******************************* BOUTON ******************************/
+.btn-degrad {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/******************************* HEART ******************************/
+.home-heart, .menu-heart {
+  font-size: 25px;
+}
+
+/******************************* FOOTER ******************************/
+#footer {
+  color: #f2f2f2;
+}
+#footer h2 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+#footer h2 a {
+  color: #f2f2f2;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -204,11 +284,6 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
-
-html, body {
-  width: 100%;
-  height: 100%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -242,17 +317,18 @@ table {
 
 /************************************ Bouton degradé **************************************/
 .btn-degrad {
-  background: linear-gradient(150deg, pink, #512c7e);
+  background: linear-gradient(170deg, #ff79DA, #9356dc);
   width: 200px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 30px;
   border: none;
   text-decoration: none;
   color: white;
   font-size: 16px;
+  box-shadow: 2px 5px 6px;
 }
 .btn-degrad:hover {
-  background: linear-gradient(10deg, white, #6939a4);
+  background: linear-gradient(170deg, #ffdff6, #ae80e5);
   transition: transform 0.2s;
   transform: scale(1.1);
 }
@@ -261,41 +337,40 @@ table {
 .step {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  width: 85%;
+  width: 80%;
+  font-size: 16px;
+  font-weight: lighter;
   align-items: center;
-  height: 40px;
-  margin-top: 10px;
-  border: 1px solid #f6f6f6;
-  background-color: grey;
-  border-radius: 40px;
-  box-shadow: 2px 2px 2px grey;
+  height: 35px;
+  margin-top: 25px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  box-shadow: 2px 2px 8px #c2bfbf;
   padding: 20px 15px 20px 15px;
   transition-property: transform;
   transition-duration: 1000ms;
 }
 .step:hover {
-  transform: scale(1.1);
   background-color: #f5edfe;
   border-color: #f5edfe;
 }
+.step:hover i {
+  color: #9356dc;
+}
 .step .number {
-  background-color: #512c7e;
+  background-color: #9356dc;
   color: white;
-  align-items: center;
-  justify-content: center;
+  font-size: 12px;
   border-radius: 100%;
-  padding: 11px 14px 11px 14px;
-  position: absolute;
+  padding: 5px 9px 5px 9px;
   margin-left: 10px;
+  position: relative;
+  right: 35px;
 }
 .step i {
-  padding: 15px 15px 15px 15px;
-  color: #512c7e;
-  margin: 10px;
-}
-.step p {
-  font-weight: bold;
+  padding: 15px 30px 15px 0px;
+  color: #5f5b5b;
+  font-size: 20px;
 }
 
 /************************************ Coeur  **************************************/
@@ -315,22 +390,17 @@ table {
 .block-heart:hover .empty-like {
   background-color: transparent;
   color: transparent;
-  transition-duration: 0.5s;
+  transition-duration: 1s;
+}
+.block-heart .home-heart {
+  background-color: white;
+  font-size: 25px;
+}
+.block-heart .menu-heart {
+  background-color: #f6f6f6;
+  font-size: 25px;
 }
 
-/************************************ MENU **************************************/
-#carte .empty-like {
-  background-color: #f2f2f2;
-}
-
-/************************************ ACCUEIL **************************************/
-#carte-restaurants .empty-like {
-  background-color: red;
-}
-
-/************************************  **************************************/
-/************************************  **************************************/
-/************************************  **************************************/
 .logo {
   text-align: center;
 }
@@ -344,21 +414,26 @@ table {
   top: 5px;
 }
 
-footer {
+#footer {
   background-color: #353535;
-  width: 100%;
+  padding: 15px 0px 40px 15px;
 }
-footer h2 {
-  font-size: 18px;
+#footer h2 {
   padding: 10px 0px 10px 10px;
 }
-footer li {
+#footer li {
   list-style: none;
-  padding: 10px 0px 5px 10px;
+  padding: 5px;
 }
-footer a {
-  color: white;
+#footer li a {
   text-decoration: none;
+  color: #FFFFFF;
+}
+#footer li a i {
+  padding-right: 5px;
+}
+#footer li a .fa-utensils {
+  margin-right: 5px;
 }
 
 /************* ACCUEIL Belleville, Paris ************/
@@ -381,58 +456,52 @@ footer a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 30px 20px 60px 20px;
+  padding: 30px 20px 100px 20px;
+}
+.banner .btn-explore {
+  align-items: center;
+  position: relative;
+  top: 30px;
 }
 
 /************************************ ACCUEIL Fonctionnement **************************************/
 .fonctionnement {
-  margin-bottom: 20px;
-  margin: auto;
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonction, #restaurants {
+  padding: 50px 0px 50px 0px;
 }
 
 /************************************ ACCUEIL Cartes restaurants **************************************/
 #restaurants {
   background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 100%;
 }
 #restaurants article {
   position: relative;
-  width: 96%;
+  object-fit: cover;
 }
 #restaurants article .new-message {
   position: absolute;
-  width: 100px;
   background-color: #99e2d0;
-  color: #008766;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 3px;
   text-align: center;
-  padding: 8px;
-  right: 30px;
-  top: 15px;
-}
-#restaurants .test {
-  padding-left: 15px;
+  padding: 6px 10px 6px 10px;
+  right: 20px;
+  top: 25px;
 }
 #restaurants a {
   text-decoration: none;
 }
-#restaurants .left-side {
-  color: black;
-  font-size: 14px;
-  margin: 0px;
-}
 #restaurants figure {
-  width: 96%;
   height: 230px;
   border-radius: 20px;
   background-color: white;
-  margin: 0px 0px 20px 0px;
-  box-shadow: 5px 5px 5px #b9b6b6;
+  box-shadow: 5px 5px 5px #d8d5d5;
+  margin: 10px 0px 10px 0px;
 }
 #restaurants figure img {
   width: 100%;
@@ -453,16 +522,19 @@ footer a {
 }
 #restaurants figure figcaption .left-side h3 {
   margin: 0px;
-  font-weight: bold;
-  font-size: 18px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
-#restaurants figure figcaption .left-side p {
-  font-size: 16px;
+
+#restaurants {
+  width: 100%;
 }
-#restaurants figure figcaption .right-side {
-  padding-top: 10px;
-  font-size: 20px;
+#restaurants #cartes-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#restaurants #cartes-restaurant article {
+  width: 90%;
 }
 
 /************* MENU Image des restaurants ************/
@@ -474,22 +546,21 @@ footer a {
 
 /************* MENU Titre des restaurant ************/
 .title-menu {
-  font-size: 24px;
-  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 20px 0px 20px 0px;
-  background-color: grey;
+  padding-top: 40px;
+  background-color: #f6f6f6;
   width: 100%;
-  border-radius: 50px 50px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
   position: absolute;
-  top: -80px;
+  top: -70px;
 }
 
 /************************************ MENU  **************************************/
 #carte {
   background-color: #f6f6f6;
+  padding-bottom: 40px;
   position: relative;
 }
 #carte #commander {
@@ -500,6 +571,7 @@ footer a {
 #carte #formulaire {
   display: flex;
   flex-direction: column;
+  padding: 40px 0px 40px 0px;
 }
 #carte #formulaire .menu-section {
   display: flex;
@@ -508,22 +580,18 @@ footer a {
 }
 #carte #formulaire .menu-section .btn-menu {
   background-color: #FFFFFF;
+  box-shadow: 2px 5px 6px #d8d5d5;
   border: none;
-  height: 60px;
+  height: 70px;
   width: 90%;
-  margin-bottom: 10px;
+  margin: 10px 0px 10px 0px;
   text-align: left;
   border-radius: 10px;
   align-items: center;
 }
-#carte #formulaire .menu-section .btn-menu h3 {
-  font-weight: bold;
-  padding-bottom: 5px;
-}
 #carte #formulaire .menu-section .btn-menu .menu-price {
   display: flex;
   justify-content: flex-end;
-  font-weight: bold;
   padding: 10px;
 }
 
@@ -533,6 +601,9 @@ footer a {
   }
   #header .logo {
     height: auto;
+  }
+  #header .logo p {
+    font-size: 50px;
   }
   #header .arrow {
     justify-content: space-around;
@@ -545,10 +616,10 @@ footer a {
     padding-left: 30px;
   }
 
-  #formulaire {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
+  #formulaire .menu-position {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
   }
   #formulaire .menu-section {
@@ -558,7 +629,7 @@ footer a {
     margin: 10px 0px 10px 0px;
   }
   #formulaire .menu-column {
-    width: 30%;
+    width: 33%;
   }
   #formulaire h2 {
     font-size: 20px;
@@ -584,6 +655,7 @@ footer a {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding: 15px;
   }
