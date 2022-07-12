@@ -124,6 +124,8 @@
   background-color: #99e2d0;
   color: white;
   animation: glissement 1.5s;
+  transform-origin: right;
+  transform: scaleX(1);
 }
 
 @keyframes checked {
@@ -406,9 +408,7 @@ table {
 }
 
 .arrow a {
-  color: black;
   text-decoration: none;
-  font-size: 30px;
   position: absolute;
   left: 15px;
   top: 5px;
@@ -625,6 +625,17 @@ table {
   }
   #formulaire .menu-section .btn-menu {
     margin: 10px 0px 10px 0px;
+  }
+  #formulaire .menu-section .btn-menu:hover h3, #formulaire .menu-section .btn-menu:hover p {
+    animation: text-defile 5s infinite linear;
+  }
+  @keyframes text-defile {
+    0%, 100% {
+      margin-left: 0;
+    }
+    99.99% {
+      margin-left: -100%;
+    }
   }
   #formulaire .menu-column {
     width: 33%;

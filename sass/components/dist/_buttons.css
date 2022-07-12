@@ -7,8 +7,6 @@
   border-radius: 30px;
   border: none;
   text-decoration: none;
-  color: white;
-  font-size: 16px;
   box-shadow: 2px 5px 6px;
 }
 .btn-degrad:hover {
@@ -43,8 +41,6 @@
 }
 .step .number {
   background-color: #9356dc;
-  color: white;
-  font-size: 12px;
   border-radius: 100%;
   padding: 5px 9px 5px 9px;
   margin-left: 10px;
@@ -53,8 +49,6 @@
 }
 .step i {
   padding: 15px 30px 15px 0px;
-  color: #5f5b5b;
-  font-size: 20px;
 }
 
 /************************************ Coeur  **************************************/
@@ -77,10 +71,8 @@
   transition-duration: 1s;
 }
 .block-heart .home-heart {
-  background-color: white;
-  font-size: 25px;
+  background-color: #ffffff;
 }
 .block-heart .menu-heart {
   background-color: #f6f6f6;
-  font-size: 25px;
 }

@@ -44,7 +44,6 @@
     100%{
         transform: rotate(360deg) scale(1.5);
         opacity: 0;
-        // background-color: opacity 1;
     }
  }
 
@@ -136,6 +135,8 @@
            background-color: #99e2d0;
            color: white;
            animation: glissement 1.5s;
+           transform-origin: right;
+           transform: scaleX(1);
       }
     }
 

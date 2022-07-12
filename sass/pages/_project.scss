@@ -39,9 +39,17 @@
 
            .btn-menu{
                margin: 10px 0px 10px 0px;
+               &:hover{
+                    h3,p{
+                            animation: text-defile 5s infinite linear;
+                    }
+                }
            }
        }
-
+        @keyframes text-defile {
+            0%, 100% {margin-left:0;}
+            99.99% {margin-left:-100%;}
+ }
        .menu-column{
            width: 33%;
        }

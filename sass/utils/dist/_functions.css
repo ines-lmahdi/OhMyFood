@@ -123,6 +123,8 @@
   background-color: #99e2d0;
   color: white;
   animation: glissement 1.5s;
+  transform-origin: right;
+  transform: scaleX(1);
 }
 
 @keyframes checked {

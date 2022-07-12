@@ -1,5 +1,6 @@
 
 /************************************ Bouton degradé **************************************/
+
 .btn-degrad{
     background: linear-gradient(170deg, #ff79DA, #9356dc);
     width: 200px;
@@ -7,8 +8,6 @@
     border-radius: 30px;
     border:none;
     text-decoration: none;
-    color: white;
-    font-size: 16px;
     box-shadow: 2px 5px 6px;
 
     &:hover{
@@ -17,6 +16,7 @@
         transform: scale(1.1);
         }
  }
+
 /************************************ Etape Fonctionnement **************************************/
 
 .step{
@@ -44,8 +44,6 @@
     }
     .number{
         background-color: #9356dc;
-        color: white;
-        font-size: 12px;
         border-radius: 100%;
         padding: 5px 9px 5px 9px;
         margin-left: 10px;
@@ -55,10 +53,11 @@
     i
     {
         padding: 15px 30px 15px 0px;
-        color: rgb(95, 91, 91);
-        font-size: 20px;
+        
     }
 }
+
+
 /************************************ Coeur  **************************************/
 
 .block-heart{
@@ -82,11 +81,10 @@
         }
     }
     .home-heart{
-        background-color: white;
-        font-size: 25px;
+        background-color: #ffffff;
     }
     .menu-heart{
         background-color: #f6f6f6;
-        font-size: 25px;
     }
   }
+
