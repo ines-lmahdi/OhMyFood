@@ -110,24 +110,6 @@
   animation: checked 1s;
 }
 
-.card-checked {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: auto;
-  height: 100%;
-  display: none;
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-}
-.card-checked:hover {
-  display: block;
-  background-color: #99e2d0;
-  color: white;
-  animation: glissement 1.5s;
-  transform-origin: right;
-  transform: scaleX(1);
-}
-
 @keyframes checked {
   0% {
     transform: rotate(0deg);
@@ -325,8 +307,6 @@ table {
   border-radius: 30px;
   border: none;
   text-decoration: none;
-  color: white;
-  font-size: 16px;
   box-shadow: 2px 5px 6px;
 }
 .btn-degrad:hover {
@@ -361,8 +341,6 @@ table {
 }
 .step .number {
   background-color: #9356dc;
-  color: white;
-  font-size: 12px;
   border-radius: 100%;
   padding: 5px 9px 5px 9px;
   margin-left: 10px;
@@ -371,8 +349,6 @@ table {
 }
 .step i {
   padding: 15px 30px 15px 0px;
-  color: rgb(95, 91, 91);
-  font-size: 20px;
 }
 
 /************************************ Coeur  **************************************/
@@ -395,12 +371,10 @@ table {
   transition-duration: 1s;
 }
 .block-heart .home-heart {
-  background-color: white;
-  font-size: 25px;
+  background-color: #ffffff;
 }
 .block-heart .menu-heart {
   background-color: #f6f6f6;
-  font-size: 25px;
 }
 
 .logo {
@@ -625,9 +599,6 @@ table {
   }
   #formulaire .menu-section .btn-menu {
     margin: 10px 0px 10px 0px;
-  }
-  #formulaire .menu-section .btn-menu:hover h3, #formulaire .menu-section .btn-menu:hover p {
-    animation: text-defile 5s infinite linear;
   }
   @keyframes text-defile {
     0%, 100% {

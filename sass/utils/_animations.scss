@@ -97,7 +97,7 @@
            animation: glissement 1s;
            }
        }
-   }
+    }
     .description-side{
         display: flex;
         flex-direction: column;
@@ -120,25 +120,6 @@
        font-size: 30px;
        animation: checked 1s ;
    }
-
-    .card-checked{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       padding: auto;
-       height: 100%;
-       display: none;
-       transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-
-       &:hover{
-           display:block;
-           background-color: #99e2d0;
-           color: white;
-           animation: glissement 1.5s;
-           transform-origin: right;
-           transform: scaleX(1);
-      }
-    }
 
 @keyframes checked{
    0%{
