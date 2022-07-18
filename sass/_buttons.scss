@@ -1,17 +1,18 @@
+@import "mixins";
+@import"variables";
 
 /************************************ Bouton degradé **************************************/
 
 .btn-degrad{
-    background: linear-gradient(170deg, #ff79DA, #9356dc);
+    background: linear-gradient(170deg, $color-secondary, $color-primary);
     width: 200px;
     padding: 15px;
     border-radius: 30px;
     border:none;
     text-decoration: none;
-    box-shadow: 2px 5px 6px;
-
+    @include shadow;
     &:hover{
-        background: linear-gradient(170deg, lighten( #ff79DA, 20%), lighten(#9356dc, 10%));
+        background: linear-gradient(170deg, lighten( $color-secondary, 20%), lighten($color-primary, 10%));
         transition: transform .2s;
         transform: scale(1.1);
         }
@@ -29,15 +30,15 @@
     height: 35px;
     margin-top: 25px;
     border-radius:25px;
-    background-color: #f2f2f2;
+    background-color: $light-grey;
     box-shadow: 2px 2px 8px rgb(194, 191, 191);
     padding: 20px 15px 20px 15px;
     transition-property: transform;
     transition-duration: 1000ms;
 
     &:hover{
-        background-color:rgba(245,237,254,255);
-        border-color:rgba(245,237,254,255);
+        background-color:rgb(245,237,254);
+        border-color:rgb(245,237,254);
         i{
             color:#9356dc
         }
@@ -53,7 +54,7 @@
     i
     {
         padding: 15px 30px 15px 0px;
-        
+
     }
 }
 

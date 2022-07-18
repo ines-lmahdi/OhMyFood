@@ -1,28 +1,42 @@
 @charset "UTF-8";
 /****************************************** ANIMATION LOADER **********************************************/
-.loader {
-  background-color: rgba(246, 246, 246, 0.8);
-  inset: 0;
-  position: fixed;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: disappear 3s forwards;
-}
-.loader .fa-bell-concierge {
-  font-size: 150px;
-  animation: chargeur 3s;
-  color: green;
-}
-
-@keyframes disappear {
+@-webkit-keyframes disappear {
   99% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   100% {
-    transform: scale(0);
+    -webkit-transform: scale(0);
+            transform: scale(0);
     visibility: hidden;
+  }
+}
+@keyframes disappear {
+  99% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes chargeur {
+  0% {
+    color: #9356dc;
+  }
+  50% {
+    color: #ff79DA;
+  }
+  75% {
+    color: #99E2D0;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1.5);
+            transform: rotate(360deg) scale(1.5);
+    opacity: 0;
   }
 }
 @keyframes chargeur {
@@ -37,105 +51,89 @@
     opacity: 1;
   }
   100% {
-    transform: rotate(360deg) scale(1.5);
+    -webkit-transform: rotate(360deg) scale(1.5);
+            transform: rotate(360deg) scale(1.5);
     opacity: 0;
   }
 }
 /************************************** ANIMATION  APPARITION DU MENU **********************************************/
 .menu-section .delay-1 {
-  animation: appearance 0.5s;
+  -webkit-animation: appearance 0.5s;
+          animation: appearance 0.5s;
 }
 .menu-section .delay-2 {
-  animation: appearance 1.5s;
+  -webkit-animation: appearance 1.5s;
+          animation: appearance 1.5s;
 }
 .menu-section .delay-3 {
-  animation: appearance 2s;
+  -webkit-animation: appearance 2s;
+          animation: appearance 2s;
 }
 .menu-section .delay-4 {
-  animation: appearance 2.5s;
+  -webkit-animation: appearance 2.5s;
+          animation: appearance 2.5s;
+}
+
+@-webkit-keyframes appearance {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes appearance {
   from {
-    transform: scale(0.1);
-    transform: translateY(20px);
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
   }
   to {
-    transform: scale(1);
-    transform: translateY(0px);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
     opacity: 1;
   }
 }
 /************************************** ANIMATION  CHECK **********************************************/
-.btn-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 8px;
-  position: relative;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.btn-menu .description-side {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.btn-menu .description-side p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.btn-menu .description-side h3 {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.btn-menu .card-checked {
-  width: 0;
-  opacity: 0;
-  background: #99e2d0;
-  cursor: pointer;
-  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-}
-.btn-menu:hover .card-checked {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  opacity: 100%;
-  width: 70px !important;
-  height: 100%;
-  border-radius: 0px 10px 10px 0px;
-  background-color: #99e2d0;
-}
-
-.price-side {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 100%;
-}
-
-.fa-circle-check {
-  font-size: 30px;
-  padding: 20px;
-  color: #ffffff;
-}
-.fa-circle-check:hover {
-  animation: checked 0.5s;
+@-webkit-keyframes checked {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 @keyframes checked {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes glissement {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 300px;
   }
 }
 @keyframes glissement {
@@ -145,6 +143,357 @@
   to {
     width: 300px;
   }
+}
+/************* ACCUEIL Belleville, Paris ************/
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(234, 234, 234);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+.localisation .fa-location-dot {
+  padding-right: 10px;
+}
+
+.banner {
+  background-color: rgb(246, 246, 246);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 30px 20px 100px 20px;
+}
+.banner .btn-explore {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 30px;
+}
+
+/************************************ ACCUEIL Fonctionnement **************************************/
+.fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonction, #restaurants {
+  padding: 50px 0px 50px 0px;
+}
+
+/************************************ ACCUEIL Cartes restaurants **************************************/
+#restaurants {
+  background-color: rgb(246, 246, 246);
+  width: 100%;
+}
+#restaurants article {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#restaurants article .new-message {
+  position: absolute;
+  background-color: rgb(153, 226, 208);
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px 10px 6px 10px;
+  right: 20px;
+  top: 25px;
+}
+#restaurants a {
+  text-decoration: none;
+}
+#restaurants figure {
+  height: 230px;
+  border-radius: 20px;
+  background-color: white;
+  margin: 10px 0px 10px 0px;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+}
+#restaurants figure img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#restaurants figure figcaption {
+  padding: 5px 15px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+#restaurants figure figcaption .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+#restaurants figure figcaption .left-side h3 {
+  margin: 0px;
+  padding-bottom: 5px;
+}
+
+#restaurants {
+  width: 100%;
+}
+#restaurants #cartes-restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#restaurants #cartes-restaurant article {
+  width: 90%;
+}
+
+/************* Image des restaurants ************/
+#banner img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/************* Titre des restaurants ************/
+.title-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 40px;
+  background-color: #f6f6f6;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  position: absolute;
+  top: -70px;
+}
+
+/************* Formulaire ************/
+#carte {
+  background-color: rgb(246, 246, 246);
+  padding-bottom: 40px;
+  position: relative;
+}
+#carte #commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+#carte #formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 0px 40px 0px;
+}
+#carte #formulaire .menu-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#carte #formulaire .menu-section .btn-menu {
+  background-color: #FFFFFF;
+  border: none;
+  height: 70px;
+  width: 90%;
+  margin: 10px 0px 10px 0px;
+  text-align: left;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+}
+#carte #formulaire .menu-section .btn-menu .menu-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px;
+}
+
+/************************ Carte plat & check ************************/
+.btn-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 8px;
+  position: relative;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+}
+.btn-menu .description-side {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+}
+.btn-menu .description-side p {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+}
+.btn-menu .description-side h3 {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+}
+.btn-menu .card-checked {
+  width: 0;
+  opacity: 0;
+  background: #99e2d0;
+  cursor: pointer;
+  -webkit-transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+.btn-menu:hover .card-checked {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+  opacity: 100%;
+  width: 70px !important;
+  height: 100%;
+  border-radius: 0px 10px 10px 0px;
+  background-color: #99e2d0;
+}
+
+.fa-circle-check {
+  font-size: 30px;
+  padding: 20px;
+  color: #ffffff;
+}
+.fa-circle-check:hover {
+  -webkit-animation: checked 0.5s;
+          animation: checked 0.5s;
+}
+
+.price-side {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+
+.loader {
+  background-color: rgba(246, 246, 246, 0.8);
+  inset: 0;
+  position: fixed;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: disappear 3s forwards;
+          animation: disappear 3s forwards;
+}
+.loader .fa-bell-concierge {
+  font-size: 150px;
+  -webkit-animation: chargeur 3s;
+          animation: chargeur 3s;
+  color: green;
 }
 
 /******************************* GENERALE ******************************/
@@ -229,7 +578,7 @@ html {
   text-align: left;
 }
 #formulaire .underline {
-  border-bottom: solid 3px #99e2d0;
+  border-bottom: solid 3px #99E2D0;
   padding-bottom: 4px;
 }
 #formulaire .btn-menu h3 {
@@ -291,6 +640,11 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+html {
+  height: 100%;
+  width: 100%;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -322,36 +676,59 @@ table {
 
 /************************************ Bouton degradé **************************************/
 .btn-degrad {
+  background: -o-linear-gradient(280deg, #ff79DA, #9356dc);
   background: linear-gradient(170deg, #ff79DA, #9356dc);
   width: 200px;
   padding: 15px;
   border-radius: 30px;
   border: none;
   text-decoration: none;
-  box-shadow: 2px 5px 6px;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+          box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
 }
 .btn-degrad:hover {
+  background: -o-linear-gradient(280deg, #ffdff6, #ae80e5);
   background: linear-gradient(170deg, #ffdff6, #ae80e5);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
   transition: transform 0.2s;
-  transform: scale(1.1);
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /************************************ Etape Fonctionnement **************************************/
 .step {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 80%;
   font-size: 16px;
   font-weight: lighter;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 35px;
   margin-top: 25px;
   border-radius: 25px;
-  background-color: #f2f2f2;
-  box-shadow: 2px 2px 8px rgb(194, 191, 191);
+  background-color: rgb(246, 246, 246);
+  -webkit-box-shadow: 2px 2px 8px rgb(194, 191, 191);
+          box-shadow: 2px 2px 8px rgb(194, 191, 191);
   padding: 20px 15px 20px 15px;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
-  transition-duration: 1000ms;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+       -o-transition-duration: 1000ms;
+          transition-duration: 1000ms;
 }
 .step:hover {
   background-color: rgb(245, 237, 254);
@@ -389,7 +766,9 @@ table {
 .block-heart:hover .empty-like {
   background-color: transparent;
   color: transparent;
-  transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 .block-heart .home-heart {
   background-color: #ffffff;
@@ -431,168 +810,11 @@ table {
   margin-right: 5px;
 }
 
-/************* ACCUEIL Belleville, Paris ************/
-.localisation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-color: rgb(234, 234, 234);
-  align-items: center;
-  height: 50px;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-}
-.localisation .fa-location-dot {
-  padding-right: 10px;
-}
-
-.banner {
-  background-color: rgb(246, 246, 246);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 30px 20px 100px 20px;
-}
-.banner .btn-explore {
-  align-items: center;
-  position: relative;
-  top: 30px;
-}
-
-/************************************ ACCUEIL Fonctionnement **************************************/
-.fonctionnement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.fonction, #restaurants {
-  padding: 50px 0px 50px 0px;
-}
-
-/************************************ ACCUEIL Cartes restaurants **************************************/
-#restaurants {
-  background-color: rgb(246, 246, 246);
-  width: 100%;
-}
-#restaurants article {
-  position: relative;
-  object-fit: cover;
-}
-#restaurants article .new-message {
-  position: absolute;
-  background-color: rgb(153, 226, 208);
-  border-radius: 3px;
-  text-align: center;
-  padding: 6px 10px 6px 10px;
-  right: 20px;
-  top: 25px;
-}
-#restaurants a {
-  text-decoration: none;
-}
-#restaurants figure {
-  height: 230px;
-  border-radius: 20px;
-  background-color: white;
-  box-shadow: 5px 5px 5px #d8d5d5;
-  margin: 10px 0px 10px 0px;
-}
-#restaurants figure img {
-  width: 100%;
-  height: 70%;
-  border-radius: 20px 20px 0 0;
-  object-fit: cover;
-}
-#restaurants figure figcaption {
-  padding: 5px 15px 5px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-}
-#restaurants figure figcaption .left-side {
-  display: flex;
-  flex-direction: column;
-}
-#restaurants figure figcaption .left-side h3 {
-  margin: 0px;
-  padding-bottom: 5px;
-}
-
-#restaurants {
-  width: 100%;
-}
-#restaurants #cartes-restaurant {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#restaurants #cartes-restaurant article {
-  width: 90%;
-}
-
-/************* MENU Image des restaurants ************/
-#banner img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-/************* MENU Titre des restaurant ************/
-.title-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 40px;
-  background-color: #f6f6f6;
-  width: 100%;
-  border-radius: 30px 30px 0px 0px;
-  position: absolute;
-  top: -70px;
-}
-
-/************************************ MENU  **************************************/
-#carte {
-  background-color: rgb(246, 246, 246);
-  padding-bottom: 40px;
-  position: relative;
-}
-#carte #commander {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-#carte #formulaire {
-  display: flex;
-  flex-direction: column;
-  padding: 40px 0px 40px 0px;
-}
-#carte #formulaire .menu-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#carte #formulaire .menu-section .btn-menu {
-  background-color: #FFFFFF;
-  box-shadow: 2px 5px 6px #d8d5d5;
-  border: none;
-  height: 70px;
-  width: 90%;
-  margin: 10px 0px 10px 0px;
-  text-align: left;
-  border-radius: 10px;
-  align-items: center;
-}
-#carte #formulaire .menu-section .btn-menu .menu-price {
-  display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-}
-
 @media screen and (min-width: 768px) {
   #header {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #header .logo {
     height: auto;
@@ -601,25 +823,43 @@ table {
     font-size: 50px;
   }
   #header .arrow {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   .title-menu {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .title-menu .fa-heart {
     padding-left: 30px;
   }
   #formulaire .menu-position {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   #formulaire .menu-section {
     width: 100%;
   }
   #formulaire .menu-section .btn-menu {
     margin: 10px 0px 10px 0px;
+  }
+  @-webkit-keyframes text-defile {
+    0%, 100% {
+      margin-left: 0;
+    }
+    99.99% {
+      margin-left: -100%;
+    }
   }
   @keyframes text-defile {
     0%, 100% {
@@ -638,8 +878,13 @@ table {
   /******************************** RESPONSIVE ACCUEIL **********************************/
   .fonction .fonctionnement {
     justify-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .fonction .fonctionnement .step {
     margin: 20px;
@@ -651,11 +896,20 @@ table {
     left: -35px;
   }
   #restaurants #cartes-restaurant {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 15px;
   }
   #restaurants #cartes-restaurant article {
@@ -666,4 +920,4 @@ table {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyIsIi4uLy4uLy4uL3Nhc3MvX2FuaW1hdGlvbnMuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9fc3R5bGVfYWNjdWVpbC5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9fbWl4aW5zLnNjc3MiLCIuLi8uLi8uLi9zYXNzL19zdHlsZV9tZW51LnNjc3MiLCIuLi8uLi8uLi9zYXNzL19zdHlsZV9sb2FkZXIuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvX3R5cG9ncmFwaHkuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvX3Jlc2V0LnNjc3MiLCIuLi8uLi8uLi9zYXNzL19idXR0b25zLnNjc3MiLCIuLi8uLi8uLi9zYXNzL19oZWFkZXIuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvX2Zvb3Rlci5zY3NzIiwiLi4vLi4vLi4vc2Fzcy9fcmVzcG9uc2l2ZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxnQkFBZ0I7QUNFZiwyR0FBQTtBQUVEO0VBQ0k7SUFDSSwyQkFBQTtZQUFBLG1CQUFBO0VERE47RUNHRTtJQUNJLDJCQUFBO1lBQUEsbUJBQUE7SUFDQSxrQkFBQTtFREROO0FBQ0Y7QUNOQTtFQUNJO0lBQ0ksMkJBQUE7WUFBQSxtQkFBQTtFREROO0VDR0U7SUFDSSwyQkFBQTtZQUFBLG1CQUFBO0lBQ0Esa0JBQUE7RURETjtBQUNGO0FDR0E7RUFDSTtJQUNJLGNDZlE7RUZjZDtFQ0tFO0lBQ0ksY0NsQlU7RUZlaEI7RUNNRTtJQUNJLGNDcEJRO0lEcUJSLFVBQUE7RURKTjtFQ09FO0lBQ0ksNENBQUE7WUFBQSxvQ0FBQTtJQUNBLFVBQUE7RURMTjtBQUNGO0FDYkE7RUFDSTtJQUNJLGNDZlE7RUZjZDtFQ0tFO0lBQ0ksY0NsQlU7RUZlaEI7RUNNRTtJQUNJLGNDcEJRO0lEcUJSLFVBQUE7RURKTjtFQ09FO0lBQ0ksNENBQUE7WUFBQSxvQ0FBQTtJQUNBLFVBQUE7RURMTjtBQUNGO0FDUUMsb0hBQUE7QUFJ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O0VBQ0ksMkJBQUE7QVhpa0JSO0FXL2pCSTtFQUNJLGdCQUFBO0VBQ0EsWUFBQTtBWGlrQlI7QVcvakJRO0VBQ0kscUJBQUE7RUFDQSxjQUFBO0FYaWtCWjtBVy9qQlk7RUFDSSxrQkFBQTtBWGlrQmhCO0FXL2pCWTtFQUNJLGlCQUFBO0FYaWtCaEI7O0FZcGxCQTtFQUVJO0lBQ0cseUJBQUE7UUFBQSxzQkFBQTtZQUFBLG1CQUFBO0Vac2xCTDtFWXBsQks7SUFDSSxZQUFBO0Vac2xCVDtFWXBsQlM7SUFDQyxlQUFBO0Vac2xCVjtFWWxsQks7SUFDSSx5QkFBQTtRQUFBLDZCQUFBO0Vab2xCVDtFWWhsQkM7SUFDSSx3QkFBQTtRQUFBLHFCQUFBO1lBQUEsdUJBQUE7RVprbEJMO0VZaGxCSztJQUNJLGtCQUFBO0Vaa2xCVDtFWTNrQks7SUFDQyxvQkFBQTtJQUFBLG9CQUFBO0lBQUEsYUFBQTtJQUNBLDhCQUFBO0lBQUEsNkJBQUE7UUFBQSx1QkFBQTtZQUFBLG1CQUFBO0lBQ0EscUJBQUE7UUFBQSxpQkFBQTtJQUNBLHlCQUFBO1FBQUEsNkJBQUE7RVo2a0JOO0VZMWtCSztJQUNJLFdBQUE7RVo0a0JUO0VZMWtCUztJQUNJLHlCQUFBO0VaNGtCYjtFWXprQk07SUFDSTtNQUFVLGNBQUE7SVo0a0JsQjtJWTNrQlE7TUFBUSxrQkFBQTtJWjhrQmhCO0VBQ0Y7RVlqbEJNO0lBQ0k7TUFBVSxjQUFBO0laNGtCbEI7SVkza0JRO01BQVEsa0JBQUE7SVo4a0JoQjtFQUNGO0VZN2tCSztJQUNJLFVBQUE7RVora0JUO0VZNWtCTTtJQUNBLGVBQUE7RVo4a0JOO0VZMWtCTSx1RkFBQTtFQUdJO0lBQ0kscUJBQUE7SUFDQSxvQkFBQTtJQUFBLG9CQUFBO0lBQUEsYUFBQTtJQUNBLDhCQUFBO0lBQUEsNkJBQUE7UUFBQSx1QkFBQTtZQUFBLG1CQUFBO0VaMGtCZDtFWXhrQmM7SUFDSSxZQUFBO0lBQ0EsVUFBQTtJQUNBLGFBQUE7RVowa0JsQjtFWXZrQmM7SUFDSSxrQkFBQTtJQUNBLFdBQUE7RVp5a0JsQjtFWWxrQlU7SUFDSSxvQkFBQTtJQUFBLG9CQUFBO0lBQUEsYUFBQTtJQUNBLDhCQUFBO0lBQUEsNkJBQUE7UUFBQSx1QkFBQTtZQUFBLG1CQUFBO0lBQ0Esd0JBQUE7UUFBQSxxQkFBQTtZQUFBLHVCQUFBO0lBQ0EseUJBQUE7UUFBQSw2QkFBQTtJQUNBLG1CQUFBO1FBQUEsZUFBQTtJQUNBLGFBQUE7RVpva0JkO0VZbGtCYztJQUNJLFVBQUE7RVpva0JsQjtFWS9qQkU7SUFDSSxrQkFBQTtFWmlrQk47QUFDRiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

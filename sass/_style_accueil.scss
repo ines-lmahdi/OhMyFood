@@ -1,3 +1,7 @@
+@import "mixins";
+@import"variables";
+
+@include responsive;
 /************* ACCUEIL Belleville, Paris ************/
 
 .localisation{
@@ -68,8 +72,8 @@
         height: 230px;
         border-radius: 20px;
         background-color: white;
-        box-shadow: 5px 5px 5px #d8d5d5;
         margin: 10px 0px 10px 0px;
+        @include shadow;
 
         img{
             width: 100%;
@@ -111,70 +115,3 @@
     }
 }
 
-/************* MENU Image des restaurants ************/
-
-#banner{
-
-    img{
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-}
-
-/************* MENU Titre des restaurant ************/
-
-.title-menu{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 40px;
-    background-color: #f6f6f6;
-    width: 100%;
-    border-radius: 30px 30px 0px 0px;
-    position: absolute;
-    top: -70px;
-}
-
-/************************************ MENU  **************************************/
-
-#carte{
-    background-color: rgba(246,246,246,255);
-    padding-bottom: 40px;
-    position: relative;
-
-    #commander{
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-    }
-        #formulaire{
-            display: flex;
-            flex-direction: column;
-            padding: 40px 0px 40px 0px;
-
-                .menu-section{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .btn-menu{
-                        background-color: #FFFFFF;
-                        box-shadow: 2px 5px 6px #d8d5d5;
-                        border: none;
-                        height: 70px;
-                        width: 90%;
-                        margin: 10px 0px 10px 0px;
-                        text-align: left;
-                        border-radius: 10px;
-                        align-items: center;
-
-                        .menu-price{
-                            display: flex;
-                            justify-content:flex-end;
-                            padding: 10px;
-                        }
-                    }
-                }
-        }
-}

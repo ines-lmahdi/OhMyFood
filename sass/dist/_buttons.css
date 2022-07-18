@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/************************************ Bouton degradé **************************************/
+.btn-degrad {
+  background: linear-gradient(170deg, #ff79DA, #9356dc);
+  width: 200px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+}
+.btn-degrad:hover {
+  background: linear-gradient(170deg, #ffdff6, #ae80e5);
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+/************************************ Etape Fonctionnement **************************************/
+.step {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  font-size: 16px;
+  font-weight: lighter;
+  align-items: center;
+  height: 35px;
+  margin-top: 25px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  box-shadow: 2px 2px 8px #c2bfbf;
+  padding: 20px 15px 20px 15px;
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+.step:hover {
+  background-color: #f5edfe;
+  border-color: #f5edfe;
+}
+.step:hover i {
+  color: #9356dc;
+}
+.step .number {
+  background-color: #9356dc;
+  border-radius: 100%;
+  padding: 5px 9px 5px 9px;
+  margin-left: 10px;
+  position: relative;
+  right: 35px;
+}
+.step i {
+  padding: 15px 30px 15px 0px;
+}
+
+/************************************ Coeur  **************************************/
+.block-heart {
+  cursor: pointer;
+  position: relative;
+}
+.block-heart .full-like {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79DA), to(#9356dc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.block-heart .empty-like {
+  color: black;
+  position: absolute;
+}
+.block-heart:hover .empty-like {
+  background-color: transparent;
+  color: transparent;
+  transition-duration: 1s;
+}
+.block-heart .home-heart {
+  background-color: #ffffff;
+}
+.block-heart .menu-heart {
+  background-color: #f6f6f6;
+}

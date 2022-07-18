@@ -1,0 +1,15 @@
+.loader {
+  background-color: rgba(246, 246, 246, 0.8);
+  inset: 0;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: disappear 3s forwards;
+}
+.loader .fa-bell-concierge {
+  font-size: 150px;
+  animation: chargeur 3s;
+  color: green;
+}

@@ -1,18 +1,17 @@
-@import "./utils/variables";
-@import "./utils/animations";
-@import "./utils/mixins";
+@import "variables";
+@import "animations";
+@import "mixins";
 
-@import "./base/style_accueil";
-@import "./base/style_menu";
-@import "./base/typography";
-@import "./base/reset";
+@import "style_accueil";
+@import "style_menu";
+@import "style_loader";
+@import "typography";
+@import "reset";
 
-@import "./components/buttons";
+@import "buttons";
 
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/container";
+@import "header";
+@import "footer";
 
-
-@import "./pages/responsives";
+@import "responsives";
 

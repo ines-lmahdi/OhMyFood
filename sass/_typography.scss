@@ -1,3 +1,6 @@
+@import "mixins";
+@import"variables";
+
 /******************************* GENERALE ******************************/
 
 html{
@@ -91,7 +94,7 @@ html{
     }
 
     .underline{
-        border-bottom: solid 3px #99e2d0;
+        border-bottom: solid 3px $color-tertiary;
         padding-bottom: 4px;
     }
 
