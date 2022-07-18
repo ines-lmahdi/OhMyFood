@@ -84,25 +84,42 @@
     flex-direction: row;
     justify-content: space-between;
     padding-left: 8px;
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    .description-side{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        p{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        h3{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        }
+
+
     .card-checked{
         width: 0;
         opacity:0;
         background: #99e2d0;
-        cursor: pointer;
-        transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-
-        .description-side{
-            p,h3{
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                }
-            }
+        cursor:pointer;
+        transition: transform 0.4s ease-in-out,width 0.4s ease-in-out, opacity 0.4s ease-in-out;
         }
         &:hover{
         .card-checked{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
             opacity: 100%;
-            width: 70px;
+            width: 70px !important;
             height: 100%;
             border-radius: 0px 10px 10px 0px;
             background-color: #99e2d0;
@@ -111,6 +128,9 @@
      }
 
     .price-side{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
        display: flex;
        flex-direction: row;
        justify-content: flex-end;
@@ -122,25 +142,27 @@
        font-size: 30px;
        padding: 20px;
        color: #ffffff;
-       animation: checked 1s ;
-   }
+       &:hover{
+        animation: checked .5s;
+       }
 
-@keyframes checked{
-   0%{
-       transform: rotate(0deg);
-   }
-   100%{
-       transform: rotate(360deg);
-   }
-}
+    @keyframes checked{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    }
 
-@keyframes glissement {
-   from{
-       width: 0px;
-   }
+    @keyframes glissement {
+    from{
+        width: 0px;
+    }
 
-   to{
-       width: 300px;
-   }
+    to{
+        width: 300px;
+    }
 
-}
+    }
+ }
