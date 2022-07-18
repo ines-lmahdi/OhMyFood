@@ -110,9 +110,6 @@
 }
 
 .price-side {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;

@@ -38,35 +38,35 @@
         justify-content: center;
         padding: 20px;
     }
-        #formulaire{
+    #formulaire{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0px 40px 0px;
+
+        .menu-section{
             display: flex;
             flex-direction: column;
-            padding: 40px 0px 40px 0px;
+            align-items: center;
 
-                .menu-section{
+            .btn-menu{
+                background-color: #FFFFFF;
+                border: none;
+                height: 70px;
+                width: 90%;
+                margin: 10px 0px 10px 0px;
+                text-align: left;
+                border-radius: 10px;
+                align-items: center;
+                @include shadow;
+
+                .menu-price{
                     display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .btn-menu{
-                        background-color: #FFFFFF;
-                        border: none;
-                        height: 70px;
-                        width: 90%;
-                        margin: 10px 0px 10px 0px;
-                        text-align: left;
-                        border-radius: 10px;
-                        align-items: center;
-                        @include shadow;
-
-                        .menu-price{
-                            display: flex;
-                            justify-content:flex-end;
-                            padding: 10px;
-                        }
-                    }
+                    justify-content:flex-end;
+                    padding: 10px;
                 }
+            }
         }
+    }
 }
 /************************ Carte plat & check ************************/
 .btn-menu{
@@ -93,45 +93,43 @@
             text-overflow: ellipsis;
             overflow: hidden;
         }
-        }
+    }
 
+    .card-checked{
+        width: 0;
+        opacity:0;
+        background: #99e2d0;
+        cursor:pointer;
+        transition: transform 0.4s ease-in-out,width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    }
+    &:hover{
         .card-checked{
-            width: 0;
-            opacity:0;
-            background: #99e2d0;
-            cursor:pointer;
-            transition: transform 0.4s ease-in-out,width 0.4s ease-in-out, opacity 0.4s ease-in-out;
-            }
-            &:hover{
-            .card-checked{
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                opacity: 100%;
-                width: 70px !important;
-                height: 100%;
-                border-radius: 0px 10px 10px 0px;
-                background-color: #99e2d0;
-                }
-            }
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            opacity: 100%;
+            width: 70px !important;
+            height: 100%;
+            border-radius: 0px 10px 10px 0px;
+            background-color: #99e2d0;
         }
+    }
+}
 
-            .fa-circle-check{
-                font-size: 30px;
-                padding: 20px;
-                color: #ffffff;
-                &:hover{
-                animation: checked .5s;
-                }
-            }
+.fa-circle-check{
+    font-size: 30px;
+    padding: 20px;
+    color: #ffffff;
+    &:hover{
+        animation: checked .5s;
+    }
+}
 
-            .price-side{
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                overflow: hidden;
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items:flex-end;
-                height: 100%;
-            }
+.price-side{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items:flex-end;
+    height: 100%;
+}
