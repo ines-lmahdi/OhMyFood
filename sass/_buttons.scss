@@ -11,6 +11,7 @@
     border:none;
     text-decoration: none;
     @include shadow;
+
     &:hover{
         background: linear-gradient(170deg, lighten( $color-secondary, 20%), lighten($color-primary, 10%));
         transition: transform .2s;
@@ -43,6 +44,7 @@
             color:#9356dc
         }
     }
+
     .number{
         background-color: #9356dc;
         border-radius: 100%;

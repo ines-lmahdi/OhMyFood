@@ -14,7 +14,6 @@
 @keyframes chargeur{
     0%{
         color:$color-primary;
-
     }
 
     50%{
@@ -24,7 +23,6 @@
     75%{
         color: $color-tertiary;
         opacity: 1;
-
     }
     100%{
         transform: rotate(360deg) scale(1.5);
@@ -35,7 +33,6 @@
  /************************************** ANIMATION  APPARITION DU MENU **********************************************/
 
  .menu-section{
-
     .delay-1{
         animation: appearance .5s;
     }
@@ -49,6 +46,7 @@
         animation: appearance 2.5s;
     }
  }
+
  @keyframes appearance {
     from {
         transform: scale(0.1);
@@ -64,10 +62,7 @@
 
  /************************************** ANIMATION  CHECK **********************************************/
 
-
-
-
-    @keyframes checked{
+@keyframes checked{
     0%{
         transform: rotate(0deg);
     }
@@ -84,5 +79,4 @@
     to{
         width: 300px;
     }
-
-    }
+}

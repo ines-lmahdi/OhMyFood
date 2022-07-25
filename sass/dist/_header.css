@@ -1,0 +1,10 @@
+.logo {
+  text-align: center;
+}
+
+.arrow a {
+  text-decoration: none;
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}

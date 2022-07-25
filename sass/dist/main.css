@@ -1,21 +1,5 @@
 @charset "UTF-8";
 /****************************************** ANIMATION LOADER **********************************************/
-.loader {
-  background-color: rgba(246, 246, 246, 0.8);
-  inset: 0;
-  position: fixed;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: disappear 3s forwards;
-}
-.loader .fa-bell-concierge {
-  font-size: 150px;
-  animation: chargeur 3s;
-  color: green;
-}
-
 @keyframes disappear {
   99% {
     transform: scale(1);
@@ -68,14 +52,6 @@
   }
 }
 /************************************** ANIMATION  CHECK **********************************************/
-.fa-circle-check {
-  font-size: 30px;
-  padding: 20px;
-  color: #ffffff;
-}
-.fa-circle-check:hover {
-  animation: checked 0.5s;
-}
 @keyframes checked {
   0% {
     transform: rotate(0deg);
@@ -92,7 +68,6 @@
     width: 300px;
   }
 }
-
 /************* ACCUEIL Belleville, Paris ************/
 .localisation {
   display: flex;
@@ -296,15 +271,37 @@
   background-color: #99e2d0;
 }
 
+.fa-circle-check {
+  font-size: 30px;
+  padding: 20px;
+  color: #ffffff;
+}
+.fa-circle-check:hover {
+  animation: checked 0.5s;
+}
+
 .price-side {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
   height: 100%;
+}
+
+.loader {
+  background-color: rgba(246, 246, 246, 0.8);
+  inset: 0;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: disappear 3s forwards;
+}
+.loader .fa-bell-concierge {
+  font-size: 150px;
+  animation: chargeur 3s;
+  color: green;
 }
 
 /******************************* GENERALE ******************************/

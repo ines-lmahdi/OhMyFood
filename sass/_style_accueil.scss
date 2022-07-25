@@ -11,6 +11,7 @@
     align-items: center;
     height: 50px;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+
     .fa-location-dot{
         padding-right: 10px;
     }
@@ -28,7 +29,7 @@
         align-items: center;
         position: relative;
         top: 30px;
-  }
+    }
 }
 
 /************************************ ACCUEIL Fonctionnement **************************************/
@@ -63,6 +64,7 @@
             top: 25px;
         }
     }
+
     a{
         text-decoration: none;
     }
