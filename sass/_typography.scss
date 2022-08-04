@@ -61,7 +61,8 @@ html{
     }
 
     p{
-        font-size: 18px;
+        font-size: 16px;
+        font-family: 'Roboto Serif',serif;
     }
 }
 
@@ -101,22 +102,22 @@ html{
 
     .btn-menu{
 
-        h3{
-            font-weight: bold;
-            font-size: 17px;
-            padding-bottom: 5px;
-        }
-
-        p{
-            font-weight: 100;
-        }
-
         .menu-price{
             font-weight: bold;
         }
 
         .description-side {
             font-size: 15px;
+
+            h3{
+                font-weight: bold;
+                font-size: 17px;
+                padding-bottom: 5px;
+            }
+
+            p{
+                font-family: 'Roboto Serif',serif;
+            }
         }
     }
 }
